@@ -1,0 +1,1 @@
+const carrousel = document.getElementById("carousel");
