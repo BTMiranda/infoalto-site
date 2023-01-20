@@ -40,14 +40,14 @@ ul li {
   align-items: center;
 }
 
-#slider{
+#slider {
   width: 100%;
   height: 100vh;
   max-width: 100%;
   position: relative;
 }
 
-#slider #content{
+#slider #content {
   position: absolute;
   z-index: 10;
   padding: 10px;
@@ -56,7 +56,7 @@ ul li {
   margin-top: 3rem;
 }
 
-#content p{
+#content p {
   text-transform: uppercase;
   font-weight: 500;
   color: var(--text-color);
@@ -64,7 +64,7 @@ ul li {
   font-size: 10pt;
 }
 
-#content h3{
+#content h3 {
   color: var(--text-color);
   margin-top: 40px;
   font-weight: 300;
@@ -72,7 +72,7 @@ ul li {
   width: 50%;
 }
 
-#content h4{
+#content h4 {
   font-weight: 500;
   color: var(--text-color);
   margin-top: 40px;
@@ -86,14 +86,74 @@ ul li {
   object-fit: cover;
   opacity: 0;
   transition: opacity 1s;
-
 }
 
 #slider img.selected {
   opacity: 1;
 }
 
-#btn-whats{
+#about-us {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, calc(100%/2));
+  place-content: center;
+  place-items: center;
+  margin-left: 7rem;
+}
+
+#about-texts h1 {
+  color: var(--bg-color);
+  font-weight: 800;
+  font-size: 2rem;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 10px;
+}
+
+#about-texts h1::before {
+  content: '';
+  width: 190px;
+  height: 6px;
+  background-color: var(--bg-color);
+  position: absolute;
+  left: 2px;
+  bottom: -9px;
+  border-radius: 3px;
+}
+
+#about-texts > p {
+  margin-top: 30px;
+  font-size: 1.05rem;
+  font-weight: 400;
+}
+
+/* Botão da seção quem somos  */
+#btn-about-texts {
+  margin-top: 30px;
+  padding: 8px;
+  outline: none;
+  border: 0;
+  background: var(--bg-color);
+  border-radius: 7px;
+  width: 200px;
+  height: 40px;
+  font-weight: 800;
+  font-size: 1rem;
+  color: var(--text-color);
+  text-transform: uppercase;
+  -webkit-box-shadow: 10px 10px 34px -13px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 34px -13px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 34px -13px rgba(0,0,0,0.75);
+  cursor: pointer;
+}
+
+#about-images {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+#btn-whats {
   width: 50px;
   height: 50px;
   background-color: green;
