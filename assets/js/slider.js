@@ -1,4 +1,4 @@
-let timer = 2000; // 2 segundos
+let timer = 3000; //  segundos
 let currentImage = 0; // Imagem atual
 const images = document.querySelectorAll("#slider img");
 const max = images.length; // quantidade total de imagens

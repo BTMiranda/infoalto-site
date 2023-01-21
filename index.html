@@ -5,11 +5,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Somos a Infoalto Otimizando Soluções e Inovações Que diferença podemos fazer por você? Conheça Nossos Serviços Web Sites Desenvolvemos sites de acordo com sua necessidade, prezando sempre a segurança, designs modernos e responsividades para diferentes telas. Sistemas Web Sistemas Web ou Desktop personalizados, usados para automatizar processos [&hellip;]">
+  <meta name="author" content="InfoAlto - Empresa Júnior">
+  <meta name="keywords" content="InfoAlto, Tecnlogia, Empresa, Júnior, Empresa Júnior, UFV, Universidade, Universidade Federal, Universidade Federal de Viçosa">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/home.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
@@ -35,6 +39,7 @@
     </nav>
     <!-- Slider  -->
     <div id="slider">
+      <div id="bg-slider"></div>
       <div id="content">
         <p>Seja bem-vindo, somos a infoatlo</p>
         <h3>Otimizando Soluções e Inovações</h3>
@@ -44,22 +49,82 @@
       <img alt="image2" src="./assets/images/image2.jpg" />
     </div>
   </header>
-  <section id="about-us">
-    <div id="about-texts">
-      <h1 id="about-title">
-        Quem somos
-      </h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aliquid reiciendis ad sunt illo facere cumque, optio quos nisi perspiciatis labore, ducimus eum eaque architecto velit voluptatum ratione natus delectus.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, dignissimos accusamus iusto vitae amet incidunt dolor molestiae blanditiis impedit reiciendis explicabo soluta animi quisquam quae facilis libero corporis ducimus eaque!
-      </p>
-      <button id="btn-about-texts">Conheça mais</button>
-    </div>
-    <div id="about-images">
-    </div>
-  </section>
+  <main id="main">
+    <div id="layer-1"></div>
+    <div id="layer-2"></div>
+    <!-- Sobre nós -->
+    <section id="about-us">
+      <div id="about-texts">
+        <h1 id="about-title">
+          Quem somos
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aliquid reiciendis ad sunt illo facere cumque,
+          optio quos nisi perspiciatis labore, ducimus eum eaque architecto velit voluptatum ratione natus delectus.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, dignissimos accusamus iusto vitae amet
+          incidunt
+          dolor molestiae blanditiis impedit reiciendis explicabo soluta animi quisquam quae facilis libero corporis
+          ducimus eaque!
+        </p>
+        <button id="btn-about-texts">Conheça mais</button>
+      </div>
+      <div id="about-images">
+        <img id="team-photo" src="./assets/images/team/team2.JPG" alt="Time InfoAlto" />
+      </div>
+    </section>
+    <!-- Nossos Servicos  -->
+    <section id="services">
+      <h2>Conheça Nossos Serviços</h2>
+      <div id="row1"></div>
+      <div id="row2"></div>
+      <div id="cards">
+        <div id="card">
+          <div id="circle">
+            <i style="color: white;" class="fa-sharp fa-solid fa-desktop fa-3x"></i>
+          </div>
+          <div id="cardContent">
+            <h3>Web Sites</h3>
+            <p>Desenvolvemos sites de acordo com sua necessidade, prezando sempre a segurança, designs modernos e
+              responsividades para diferentes telas.</p>
+          </div>
+        </div>
+        <div id="card">
+          <div id="circle">
+            <i style="color: white;" class="fa-sharp fa-solid fa-basket-shopping fa-3x"></i>
+          </div>
+          <div id="cardContent">
+            <h3>E-Commerce</h3>
+            <p>Comércio eletrônico seguro e otimizado. Modalidade de comércio por meio da qual a compra e venda, bem
+              como as transações financeiras, são feitas totalmente pela internet.</p>
+          </div>
+        </div>
+        <div id="card">
+          <div id="circle">
+            <i style="color: white;" class="fa-sharp fa-solid fa-network-wired fa-3x"></i>
+          </div>
+          <div id="cardContent">
+            <h3>Sistemas Web</h3>
+            <p>Sistemas Web ou Desktop personalizados, usados para automatizar processos e diminuir custos.
+              Desenvolvidos de maneira otimizada e segura, podendo ser acessado de qualquer computador.</p>
+          </div>
+        </div>
+        <div id="card">
+          <div id="circle">
+            <i style="color: white;" class="fa-sharp fa-solid fa-mobile-screen-button fa-3x"></i>
+          </div>
+          <!-- Trocar o texto do p  -->
+          <div id="cardContent">
+            <h3>Apps Mobilie</h3>
+            <p>Sistemas Web ou Desktop personalizados, usados para automatizar processos e diminuir custos.
+              Desenvolvidos de maneira otimizada e segura, podendo ser acessado de qualquer computador.</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
   <!-- <div id="btn-whats" /> -->
   <script src="assets/js/slider.js" />
 </body>
