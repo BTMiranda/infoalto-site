@@ -298,17 +298,15 @@ ul li {
   line-height: 1.4rem;
 }
 
-#servicesDigitalCardContent{
+/* #servicesDigitalCardContent{
   width: 100%;
 }
 
 #servicesDigitalCardContent h3 {
-  text-align: center;
   color: var(--text-color);
   font-weight: 400;
   font-size: 2rem;
   margin-top: 2rem;
-  background-color: #25d366;
 }
 
 #servicesDigitalCardContent p {
@@ -317,7 +315,7 @@ ul li {
   margin-top: 1rem;
   font-size: 0.9rem;
   line-height: 1.4rem;
-}
+} */
 
 #services-digital {
   width: 100%;
@@ -345,14 +343,14 @@ ul li {
   width: 30%;
 }
 
-#servicesDigitalContent p {
+#servicesDigitalTexts p {
   margin-top: 1rem;
   text-transform: uppercase;
   font-weight: 900;
   font-size: 0.9rem;
 }
 
-#services-digital h3 {
+#servicesDigitalTexts h3 {
   font-size: 3rem;
   font-family: var(--font-titles);
   text-transform: uppercase;
