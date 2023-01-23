@@ -149,7 +149,24 @@
     </div>
   </main>
   <section id="numbers">
-    
+    <div id="numbers-overlay"></div>
+    <div id="numbersContent">
+      <h2>Nossos <br /> Números</h2>
+      <div id="numbersCardContainer">
+        <div id="numbersCard">
+          <span data-val="10" class="num">00</span>
+          <h4>ANOS DE HISTÓRIA</h4>
+        </div>
+        <div id="numbersCard">
+          <span data-val="60" class="num">+00</span>
+          <h4>PROJETOS ENTREGUES</h4>
+        </div>
+        <div id="numbersCard">
+          <span data-val="100" class="num">+000</span>
+          <h4>CLIENTES SATISFEITOS</h4>
+        </div>
+      </div>
+    </div>
   </section>
   <!-- Serviços Digitais  -->
   <footer id="footer">
@@ -173,6 +190,22 @@
   <a href="https://api.whatsapp.com/send?phone=5534998430039&text=Ola%20gostaria" class="float" target="_blank">
     <i class="fa-brands fa-whatsapp my-float"></i>
   </a>
+  <script>
+    let values = document.querySelectorAll('.num');
+    let time = 5000;
+    values.forEach(item => {
+      let start = 0;
+      let end = parseInt(item.getAttribute("data-val"));
+      let duration = Math.floor(time / end);
+      let counter = setInterval(() => {
+        start += 1;
+        item.textContent = '+' + start;
+        if (start === end) {
+          clearInterval(counter)
+        }
+      }, duration)
+    })
+  </script>
   <script src="assets/js/slider.js"></script>
   <script src="assets/js/particles.min.js"></script>
   <script src="assets/js/app.js"></script>
