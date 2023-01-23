@@ -311,6 +311,43 @@ ul li {
   animation: wiggle 2.5s infinite;
 }
 
+#footer {
+  background-color: #282828;
+  height: 40vh;
+}
+
+#footerContent {
+  display: grid;
+  grid-template-columns: repeat(4, calc(100% / 4));
+  place-items: center;
+  place-content: center;
+  padding: 10px;
+  height: 100%;
+}
+
+#footerContent * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#footerContent img {
+  width: 296px;
+  height: 120px;
+}
+
+#footerMenu{
+  display: block;
+  list-style: none;
+  text-align: center;
+}
+
+#footerMenu li{
+  margin: 0.8rem 0;
+  color: var(--text-color);
+ 
+}
+
 @keyframes wiggle {
   0% {
     transform: rotate(0deg);
