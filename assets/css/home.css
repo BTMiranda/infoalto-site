@@ -42,8 +42,9 @@ ul li {
 }
 
 #main {
-  height: 100vh;
+  height: auto;
   position: relative;
+  width: 100%;
 }
 
 #slider {
@@ -293,6 +294,11 @@ ul li {
   margin-top: 1rem;
   font-size: 0.9rem;
   line-height: 1.4rem;
+}
+
+#services-digital {
+
+  z-index: 10;
 }
 
 
