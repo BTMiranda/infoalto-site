@@ -182,8 +182,6 @@ ul li {
   box-shadow: 10px 10px 34px -13px rgba(0, 0, 0, 0.75);
 }
 
-
-
 /* Botão da seção quem somos  */
 #btn-about-texts {
   margin-top: 30px;
@@ -223,7 +221,6 @@ ul li {
   font-family: var(--font-titles);
   letter-spacing: 2.3px;
 }
-
 
 #services #row1 {
   width: 190px;
@@ -297,21 +294,49 @@ ul li {
 }
 
 #services-digital {
-
   z-index: 10;
 }
 
-
 /* Button Whatsapp  */
-#btn-whats {
-  width: 50px;
-  height: 50px;
-  background-color: green;
-  border-radius: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  right: 10px;
-  z-index: 20;
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  animation: wiggle 2.5s infinite;
+}
+
+.my-float {
+  margin-top: 16px;
+  animation: wiggle 2.5s infinite;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  80% {
+    transform: rotate(0deg);
+  }
+
+  85% {
+    transform: rotate(5deg);
+  }
+
+  95% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
 }
