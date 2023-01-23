@@ -256,7 +256,7 @@ ul li {
   background-color: #00536e;
 }
 
-#card #circle {
+#card .circle {
   width: 100px;
   height: 100px;
   border: 1px solid #fff;
@@ -266,6 +266,17 @@ ul li {
   justify-content: center;
   margin-top: 1rem;
   margin-left: 1rem;
+}
+
+#servicesDigitalCard .circle {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;  
 }
 
 #cardContent {
@@ -282,6 +293,27 @@ ul li {
 #cardContent p {
   font-weight: 300;
   color: var(--text-color);
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+}
+
+#servicesDigitalCardContent{
+  width: 100%;
+}
+
+#servicesDigitalCardContent h3 {
+  text-align: center;
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 2rem;
+  margin-top: 2rem;
+  background-color: #25d366;
+}
+
+#servicesDigitalCardContent p {
+  color: var(--text-color);
+  font-weight: 300;
   margin-top: 1rem;
   font-size: 0.9rem;
   line-height: 1.4rem;
@@ -307,7 +339,6 @@ ul li {
   display: flex;
   align-items: center;
   justify-content: space-around;
-
 }
 
 #servicesDigitalTexts {
@@ -334,6 +365,10 @@ ul li {
   width: 320px;
   height: 316px;
   background-color: #007BA5;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
   border-radius: 4px;
   -webkit-box-shadow: 10px 10px 34px -13px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 34px -13px rgba(0, 0, 0, 0.75);
