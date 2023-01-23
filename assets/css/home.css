@@ -220,6 +220,7 @@ ul li {
   background-color: #114977;
   margin: 0 auto;
   margin-top: 2rem;
+  border-radius: 5px;
 }
 
 #services #row2 {
@@ -228,6 +229,7 @@ ul li {
   background-color: #007BA5;
   margin: 0 auto;
   margin-top: 2rem;
+  border-radius: 5px;
 }
 
 #cards {
@@ -286,7 +288,62 @@ ul li {
 }
 
 #services-digital {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem 0;
+  gap: 10px;
+}
+
+#services-digital * {
   z-index: 10;
+}
+
+#servicesDigitalContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+#servicesDigitalTexts {
+  width: 30%;
+}
+
+#servicesDigitalContent p {
+  margin-top: 1rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 0.9rem;
+}
+
+#services-digital h3 {
+  font-size: 3rem;
+  font-family: var(--font-titles);
+  text-transform: uppercase;
+  color: var(--bg-color);
+  letter-spacing: 5px;
+  width: 20%;
+}
+
+#servicesDigitalCard {
+  width: 320px;
+  height: 316px;
+  background-color: #007BA5;
+  border-radius: 4px;
+  -webkit-box-shadow: 10px 10px 34px -13px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 34px -13px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 34px -13px rgba(0, 0, 0, 0.75);
+}
+
+#team {
+  width: 100%;
+  height: 201px;
+  background-color: #fff;
+  padding: 1rem;
 }
 
 /* Button Whatsapp  */
@@ -336,16 +393,16 @@ ul li {
   height: 120px;
 }
 
-#footerMenu{
+#footerMenu {
   display: block;
   list-style: none;
   text-align: center;
 }
 
-#footerMenu li{
+#footerMenu li {
   margin: 0.8rem 0;
   color: var(--text-color);
- 
+
 }
 
 @keyframes wiggle {
