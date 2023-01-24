@@ -199,11 +199,11 @@ ul li {
   transition-delay: 0ms;
   transition-duration: 0.4s, 0.3s, 0.3s, 0.3s;
   animation-name: pulse;
-            animation-duration: 2.0s;
-            animation-timing-function: linear;
-            animation-direction: alternate;
-            animation-iteration-count: infinite;
-            animation-play-state: running;
+  animation-duration: 2.0s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
 }
 
 @keyframes pulse{
@@ -236,7 +236,7 @@ ul li {
   letter-spacing: 2.3px;
 }
 
-#services #row1 {
+#row1 {
   width: 190px;
   height: 3px;
   background-color: #114977;
@@ -245,14 +245,84 @@ ul li {
   border-radius: 5px;
 }
 
-#services #row2 {
+#row2 {
   width: 90px;
   height: 3px;
   background-color: #007BA5;
   margin: 0 auto;
-  margin-top: 2rem;
+  margin-top: 1rem;
   border-radius: 5px;
 }
+
+/* Vantagens */
+
+#vantagens *{
+  z-index: 10;
+}
+
+#vantagens {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#vantagens h2 {
+  margin-top: 2rem;
+  color: var(--bg-color);
+  text-align: center;
+  font-weight: 500;
+  font-size: 2.4rem;
+  font-family: var(--font-titles);
+  letter-spacing: 2.3px;
+}
+
+#vantagens h3 {
+  color: var(--bg-color);
+  text-align: center;
+  font-family: var(--font-titles);
+  letter-spacing: 1px;
+}
+
+#benefits {
+  width: 1065px;
+  height: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+#benefitsCard{
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 10px;
+  justify-content: space-around;
+  
+}
+
+#benfitsCardText{
+  width: 100%;
+}
+
+#benfitsCardText h4{
+  color: var(--bg-color);
+  font-weight: 500;
+  font-size: 1.9rem;
+}
+
+#benfitsCardText p{
+  font-weight: 400;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  line-height: 1.3rem;
+}
+
+/* Cards */
 
 #cards {
   margin-top: 2rem;
@@ -322,6 +392,8 @@ ul li {
   /* line-height: 1.4rem; */
   text-align: justify;
 }
+
+/* Serviços */
 
 #servicesDigitalCardContent {
   width: 100%;
