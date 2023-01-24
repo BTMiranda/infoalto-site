@@ -194,7 +194,7 @@ ul li {
   cursor: pointer;
 }
 
-#btn-about-texts:hover{
+#btn-about-texts:hover {
   /* background-color: var(--bg-color-transition) ; */
   transition-delay: 0ms;
   transition-duration: 0.4s, 0.3s, 0.3s, 0.3s;
@@ -206,11 +206,12 @@ ul li {
   animation-play-state: running;
 }
 
-@keyframes pulse{
-  0%{
-    background: rgba(17,73,119,1);
+@keyframes pulse {
+  0% {
+    background: rgba(17, 73, 119, 1);
   }
-  100%{
+
+  100% {
     background: rgb(7, 29, 48);
   }
 }
@@ -256,9 +257,33 @@ ul li {
 
 /* Vantagens */
 
-#vantagens *{
+#vantagens * {
   z-index: 10;
 }
+
+#bg-vantagens {
+  background: url('../images/image5.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#vantagens-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #FFFFFF;
+  opacity: 0.9;
+}
+
 
 #vantagens {
   display: flex;
@@ -266,6 +291,8 @@ ul li {
   justify-content: center;
   flex-direction: column;
 }
+
+
 
 #vantagens h2 {
   margin-top: 2rem;
@@ -284,6 +311,74 @@ ul li {
   letter-spacing: 1px;
 }
 
+#portfolio * {
+  z-index: 10;
+}
+
+#portfolio {
+  margin-top: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#portfolio h2 {
+  margin-top: 2rem;
+  color: var(--bg-color);
+  text-align: center;
+  font-weight: 500;
+  font-size: 2.4rem;
+  font-family: var(--font-titles);
+  letter-spacing: 2.3px;
+}
+
+#portfolioExamples {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+#portfolioExamples img {
+  width: 354px;
+  height: 269px;
+  border-radius: 6px;
+  -webkit-box-shadow: 10px 10px 34px -13px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 34px -13px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 34px -13px rgba(0, 0, 0, 0.75);
+}
+
+#btn-portfolio {
+  margin-top: 30px;
+  padding: 8px;
+  outline: none;
+  border: 0;
+  background: var(--bg-color);
+  border-radius: 7px;
+  width: 300px;
+  height: 40px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--text-color);
+  -webkit-box-shadow: 10px 10px 34px -13px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 34px -13px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 34px -13px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+
+#btn-portfolio:hover {
+  transition-delay: 0ms;
+  transition-duration: 0.4s, 0.3s, 0.3s, 0.3s;
+  animation-name: pulse;
+  animation-duration: 2.0s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+
 #benefits {
   width: 1065px;
   height: auto;
@@ -295,27 +390,27 @@ ul li {
   padding-bottom: 2rem;
 }
 
-#benefitsCard{
+#benefitsCard {
   padding: 2rem;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
   gap: 10px;
   justify-content: space-around;
-  
+
 }
 
-#benfitsCardText{
+#benfitsCardText {
   width: 100%;
 }
 
-#benfitsCardText h4{
+#benfitsCardText h4 {
   color: var(--bg-color);
   font-weight: 500;
   font-size: 1.9rem;
 }
 
-#benfitsCardText p{
+#benfitsCardText p {
   font-weight: 400;
   margin-top: 1rem;
   font-size: 0.85rem;
@@ -412,7 +507,7 @@ ul li {
   margin-top: 1rem;
   font-size: 0.9rem;
   line-height: 1.4rem;
-} 
+}
 
 #servicesDigitalCardContent a {
   text-decoration: none;
@@ -498,6 +593,7 @@ ul li {
   background-size: cover;
   padding: 1rem;
   position: relative;
+  margin-top: 3rem;
 }
 
 #numbers #numbers-overlay {
@@ -592,8 +688,37 @@ ul li {
   animation: wiggle 2.5s infinite;
 }
 
+#depositions h1 {
+  z-index: 10;
+}
+
+#depositions {
+  background: url('../images/image1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+#depositions-overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--bg-color);
+  opacity: 0.93;
+  z-index: 0;
+}
+
 #footer {
-  margin-top: 100rem;
+  /* margin-top: 5rem; */
   background-color: #282828;
   height: 40vh;
 }
@@ -634,6 +759,15 @@ ul li {
   height: 100%;
   position: absolute;
   z-index: 10;
+}
+
+.waveContainer {
+  margin-top: 2.5rem;
+  transform: rotate(180deg);
+}
+
+.wave{
+  fill: var(--bg-color);
 }
 
 @keyframes wiggle {
