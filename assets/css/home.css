@@ -1,4 +1,5 @@
 :root {
+  --bg-color-transition: #00536e;
   --bg-color: #114977;
   --text-color: #FFFFFF;
   --font-global: 'Montserrat', sans-serif;
@@ -193,6 +194,27 @@ ul li {
   cursor: pointer;
 }
 
+#btn-about-texts:hover{
+  /* background-color: var(--bg-color-transition) ; */
+  transition-delay: 0ms;
+  transition-duration: 0.4s, 0.3s, 0.3s, 0.3s;
+  animation-name: pulse;
+            animation-duration: 2.0s;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+}
+
+@keyframes pulse{
+  0%{
+    background: rgba(17,73,119,1);
+  }
+  100%{
+    background: rgb(7, 29, 48);
+  }
+}
+
 #services {
   display: flex;
   align-items: center;
@@ -239,7 +261,7 @@ ul li {
 }
 
 #card {
-  padding: 1rem;
+  padding: 1rem 2rem 1rem 1rem;
   width: 546px;
   height: 220px;
   background-color: #007BA5;
@@ -253,7 +275,9 @@ ul li {
 }
 
 #card:hover {
-  background-color: #00536e;
+  background-color: var(--bg-color-transition);
+  transition-delay: 0ms;
+  transition-duration: 0.4s, 0.3s, 0.3s, 0.3s;
 }
 
 #card .circle {
@@ -295,7 +319,8 @@ ul li {
   color: var(--text-color);
   margin-top: 1rem;
   font-size: 0.9rem;
-  line-height: 1.4rem;
+  /* line-height: 1.4rem; */
+  text-align: justify;
 }
 
 #servicesDigitalCardContent {
@@ -306,7 +331,7 @@ ul li {
   color: var(--text-color);
   font-weight: 400;
   font-size: 2rem;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
 }
 
 #servicesDigitalCardContent p {
@@ -315,7 +340,16 @@ ul li {
   margin-top: 1rem;
   font-size: 0.9rem;
   line-height: 1.4rem;
-} */
+} 
+
+#servicesDigitalCardContent a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 200;
+  margin-top: 1rem;
+  font-size: 0.7rem;
+  line-height: 1.4rem;
+}
 
 #services-digital {
   width: 100%;
@@ -343,7 +377,10 @@ ul li {
   width: 30%;
 }
 
+
 #servicesDigitalTexts p {
+  border-left: var(--bg-color) 0.15rem solid;
+  padding-left: 0.4rem;
   margin-top: 1rem;
   text-transform: uppercase;
   font-weight: 900;
@@ -359,7 +396,14 @@ ul li {
   width: 20%;
 }
 
+#servicesDigitalCard:hover {
+  background-color: var(--bg-color-transition);
+  transition-delay: 0ms;
+  transition-duration: 0.4s, 0.3s, 0.3s, 0.3s;
+}
+
 #servicesDigitalCard {
+  padding: 1rem;
   width: 320px;
   height: 316px;
   background-color: #007BA5;
@@ -412,9 +456,9 @@ ul li {
   margin-left: 4rem;
   font-size: 3.5rem;
   color: var(--text-color);
-  font-weight: var(--font-global);
+  font-family: var(--font-titles);
   font-weight: 400;
-  line-height: 90px;
+  /* line-height: 90px; */
 }
 
 #numbersCardContainer {
