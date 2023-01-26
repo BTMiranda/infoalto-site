@@ -18,4 +18,6 @@ function start() {
   setInterval(nextImage, timer);
 }
 
+setInterval(pularimagem, 2000);
+
 window.addEventListener("load", start);
