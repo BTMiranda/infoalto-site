@@ -1089,7 +1089,7 @@ ul li {
 
 /* Responsividade */
 
-@media only screen and (min-width: 320px) {
+/* @media only screen and (max-width: 320px) {
   header nav {
     height: 10rem;
     background-color: green;
@@ -1098,9 +1098,9 @@ ul li {
     align-items: center;
     justify-content: space-around;
   }
-}
+} */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   header nav {
     height: 10rem;
     background-color: red;
