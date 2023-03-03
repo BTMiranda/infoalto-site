@@ -38,18 +38,39 @@
     <title>InfoAlto - Empresa Júnior - InfoAlto</title>
   </head>
   <body onresize="change()">
-    <a
-      href="https://api.whatsapp.com/send?phone=5534998430039&text=Ola%20gostaria"
-      class="float"
-      target="_blank"
-    >
+    <div onclick="openPopUP()" class="float">
       <i class="fa-brands fa-whatsapp my-float"></i>
-    </a>
+    </div>
+    <div style="display: none" id="popup" class="popup">
+      <div class="popup-content">
+        <form id="form">
+          <label for="name">Nome</label>
+          <input type="text" id="nome" name="nome" />
+          <label for="telefone">Telefone</label>
+          <input type="text" id="telefone" name="telefone" />
+          <label for="mensagem">Mensagem</label>
+          <textarea
+            id="mensagem"
+            name="mensagem"
+            style="height: 131px; width: 261px"
+          ></textarea>
+          <div class="btn-form-container">
+            <button type="submit" class="btn-form-popup">
+              Enviar Mensagem
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
     <header class="header">
       <nav class="navigation">
-        <img class="logo" id="logo"
-        src="./assets/images/logos/logo-infoalto-branca-branca-extendida.png""
-        alt="Logo InfoAlto" />
+        <img
+          class="logo"
+          id="logo"
+          src="./assets/images/logos/logo-infoalto-branca-branca-extendida.png"
+          alt="Logo InfoAlto"
+        />
         <i
           onclick="clickMenu()"
           id="burger"
@@ -403,6 +424,13 @@
       </div>
     </footer>
     <script>
+      function openPopUP() {
+        if (popup.style.display === "none") {
+          popup.style.display = "block";
+        } else {
+          popup.style.display = "none";
+        }
+      }
       function change() {
         if (window.innerWidth >= 768) {
           items.style.display = "block";
@@ -435,5 +463,6 @@
     <script src="./assets/js/slider.js"></script>
     <script src="./assets/js/particles.min.js"></script>
     <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/popup.js"></script>
   </body>
 </html>
