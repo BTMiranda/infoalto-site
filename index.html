@@ -1,363 +1,442 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Somos a Infoalto Otimizando Soluções e Inovações Que diferença podemos fazer por você? Conheça Nossos Serviços Web Sites Desenvolvemos sites de acordo com sua necessidade, prezando sempre a segurança, designs modernos e responsividades para diferentes telas. Sistemas Web Sistemas Web ou Desktop personalizados, usados para automatizar processos [&hellip;]"
+    />
+    <meta name="author" content="InfoAlto - Empresa Júnior" />
+    <meta
+      name="keywords"
+      content="InfoAlto, Tecnlogia, Empresa, Júnior, Empresa Júnior, UFV, Universidade, Universidade Federal, Universidade Federal de Viçosa"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/icon/icon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="Somos a Infoalto Otimizando Soluções e Inovações Que diferença podemos fazer por você? Conheça Nossos Serviços Web Sites Desenvolvemos sites de acordo com sua necessidade, prezando sempre a segurança, designs modernos e responsividades para diferentes telas. Sistemas Web Sistemas Web ou Desktop personalizados, usados para automatizar processos [&hellip;]">
-  <meta name="author" content="InfoAlto - Empresa Júnior">
-  <meta name="keywords"
-    content="InfoAlto, Tecnlogia, Empresa, Júnior, Empresa Júnior, UFV, Universidade, Universidade Federal, Universidade Federal de Viçosa">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/reset.css">
-  <link rel="stylesheet" href="./assets/css/home.css">
-  <link rel="shortcut icon" href="./assets/images/icon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-  <title>InfoAlto - Empresa Júnior - InfoAlto</title>
-</head>
+    <title>InfoAlto - Empresa Júnior - InfoAlto</title>
+  </head>
+  <body onresize="change()">
+    <a
+      href="https://api.whatsapp.com/send?phone=5534998430039&text=Ola%20gostaria"
+      class="float"
+      target="_blank"
+    >
+      <i class="fa-brands fa-whatsapp my-float"></i>
+    </a>
+    <header class="header">
+      <nav class="navigation">
+        <img class="logo" id="logo"
+        src="./assets/images/logos/logo-infoalto-branca-branca-extendida.png""
+        alt="Logo InfoAlto" />
+        <i
+          onclick="clickMenu()"
+          id="burger"
+          style="color: white"
+          class="fa-sharp fa-solid fa-bars fa-2xl"
+        ></i>
+        <menu id="items">
+          <ul>
+            <li>Inicio</li>
+            <li>Inicio</li>
+            <li>Inicio</li>
+            <li>Inicio</li>
+            <li>Inicio</li>
+          </ul>
+        </menu>
 
-<body>
-  <section class="testetestada">
-
-    <header id="header">
-      <nav id="menu">
-        <img id="logo" src="./assets/images/logo-infoalto-branca-branca-extendida.png" alt="Logo InfoAlto" />
-        <ul>
-          <li>Inicio</li>
-          <li>Inicio</li>
-          <li>Inicio</li>
-          <li>Inicio</li>
-        </ul>
-        <div id="icons">
-          <i style="color: white;" class="fa-brands fa-facebook fa-xl"></i>
-          <i style="color: white;" class="fa-brands fa-instagram fa-xl"></i>
-          <i style="color: white;" class="fa-brands fa-linkedin fa-xl"></i>
-          <i style="color: white;" class="fa-brands fa-twitter fa-xl"></i>
+        <div class="icons">
+          <i style="color: white" class="fa-brands fa-facebook fa-xl"></i>
+          <i style="color: white" class="fa-brands fa-instagram fa-xl"></i>
+          <i style="color: white" class="fa-brands fa-linkedin fa-xl"></i>
+          <i style="color: white" class="fa-brands fa-twitter fa-xl"></i>
         </div>
       </nav>
-      <!-- Slider  -->
-      <div id="slider">
+      <div class="slider">
+        <div class="overlay-slider-bg"></div>
         <div id="particles-js"></div>
-        <div id="bg-slider"></div>
-        <div id="content">
-          <p>Seja bem-vindo, somos a infoatlo</p>
+        <div class="content">
+          <p>Seja bem-vindo, somos a InfoAtlo</p>
           <h3>Otimizando Soluções e Inovações</h3>
           <h4>Que diferença podemos fazer por você?</h4>
         </div>
-        <img alt="image1" class="selected" src="./assets/images/image1.jpg" />
-        <img alt="image2" src="./assets/images/image2.jpg" />
+        <img
+          class="selected"
+          src="./assets/images/slide/image1.jpg"
+          alt="Imagem 1 do Slide"
+        />
+        <img src="./assets/images/slide/image2.jpg" alt="Imagem 2 do Slide" />
       </div>
     </header>
-    <main id="main">
-      <div id="bg"></div>
-      <!-- Sobre nós -->
-      <section id="about-us">
-        <div id="about-texts">
-          <h1 id="about-title">
-            Quem somos
-          </h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aliquid reiciendis ad sunt illo facere cumque,
-            optio quos nisi perspiciatis labore, ducimus eum eaque architecto velit voluptatum ratione natus delectus.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, dignissimos accusamus iusto vitae amet
-            incidunt
-            dolor molestiae blanditiis impedit reiciendis explicabo soluta animi quisquam quae facilis libero corporis
-            ducimus eaque!
-          </p>
-          <button id="btn-about-texts">Conheça mais</button>
-        </div>
-        <div id="about-images">
-          <img id="team-photo" src="./assets/images/team/team2.JPG" alt="Time InfoAlto" />
+    <main>
+      <section class="about-us">
+        <div class="overlay-about-us"></div>
+        <div class="content">
+          <div class="wrapper">
+            <div class="texts">
+              <h1>Quem somos</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Maiores nesciunt libero debitis, deleniti neque nam eius
+                necessitatibus impedit repellat laborum error perspiciatis
+                molestias. Repudiandae dolorem odit qui laborum, accusamus
+                architecto?
+              </p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Maiores nesciunt libero debitis, deleniti neque nam eius
+                necessitatibus impedit repellat laborum error perspiciatis
+                molestias. Repudiandae dolorem odit qui laborum, accusamus
+                architecto?
+              </p>
+              <button class="btn-about-us">Saiba mais</button>
+            </div>
+            <img
+              class="team"
+              src="./assets/images/team/team2.JPG"
+              alt="Time InfoAlto 2022 - Bi Alto Impacto"
+            />
+          </div>
+
+          <section class="services">
+            <div class="content-services">
+              <h1>Conheça Nossos Serviços</h1>
+              <div class="rows">
+                <div class="row-1"></div>
+                <div class="row-2"></div>
+              </div>
+              <div class="cards" id="cards">
+                <div class="card" id="card">
+                  <div class="circle">
+                    <i
+                      style="color: white"
+                      class="fa-sharp fa-solid fa-desktop fa-3x"
+                    ></i>
+                  </div>
+                  <div class="cardContent">
+                    <h3>Web Sites</h3>
+                    <p>
+                      Desenvolvemos sites de acordo com sua necessidade,
+                      prezando sempre a segurança, designs modernos e
+                      responsividades para diferentes telas.
+                    </p>
+                  </div>
+                </div>
+                <div class="card" id="card">
+                  <div class="circle">
+                    <i
+                      style="color: white"
+                      class="fa-sharp fa-solid fa-basket-shopping fa-3x"
+                    ></i>
+                  </div>
+                  <div class="cardContent">
+                    <h3>E-Commerce</h3>
+                    <p>
+                      Comércio eletrônico seguro e otimizado. Modalidade de
+                      comércio por meio da qual a compra e venda, bem como as
+                      transações financeiras, são feitas totalmente pela
+                      internet.
+                    </p>
+                  </div>
+                </div>
+                <div class="card" id="card">
+                  <div class="circle">
+                    <i
+                      style="color: white"
+                      class="fa-sharp fa-solid fa-network-wired fa-3x"
+                    ></i>
+                  </div>
+                  <div class="cardContent">
+                    <h3>Sistemas Web</h3>
+                    <p>
+                      Sistemas Web ou Desktop personalizados, usados para
+                      automatizar processos e diminuir custos. Desenvolvidos de
+                      maneira otimizada e segura, podendo ser acessado de
+                      qualquer computador.
+                    </p>
+                  </div>
+                </div>
+                <div class="card" id="card">
+                  <div class="circle">
+                    <i
+                      style="color: white"
+                      class="fa-sharp fa-solid fa-mobile-screen-button fa-3x"
+                    ></i>
+                  </div>
+                  <div class="cardContent">
+                    <h3>Apps Mobilie</h3>
+                    <p>
+                      Sistemas Web ou Desktop personalizados, usados para
+                      automatizar processos e diminuir custos. Desenvolvidos de
+                      maneira otimizada e segura, podendo ser acessado de
+                      qualquer computador.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </section>
-      <!-- Nossos Servicos  -->
-      <section id="services">
-        <h2>Conheça Nossos Serviços</h2>
-        <div id="row1"></div>
-        <div id="row2"></div>
-        <div id="cards">
-          <div id="card">
-            <div class="circle">
-              <i style="color: white;" class="fa-sharp fa-solid fa-desktop fa-3x"></i>
-            </div>
-            <div id="cardContent">
-              <h3>Web Sites</h3>
-              <p>Desenvolvemos sites de acordo com sua necessidade, prezando sempre a segurança, designs modernos e
-                responsividades para diferentes telas.</p>
-            </div>
-          </div>
-          <div id="card">
-            <div class="circle">
-              <i style="color: white;" class="fa-sharp fa-solid fa-basket-shopping fa-3x"></i>
-            </div>
-            <div id="cardContent">
-              <h3>E-Commerce</h3>
-              <p>Comércio eletrônico seguro e otimizado. Modalidade de comércio por meio da qual a compra e venda, bem
-                como as transações financeiras, são feitas totalmente pela internet.</p>
-            </div>
-          </div>
-          <div id="card">
-            <div class="circle">
-              <i style="color: white;" class="fa-sharp fa-solid fa-network-wired fa-3x"></i>
-            </div>
-            <div id="cardContent">
-              <h3>Sistemas Web</h3>
-              <p>Sistemas Web ou Desktop personalizados, usados para automatizar processos e diminuir custos.
-                Desenvolvidos de maneira otimizada e segura, podendo ser acessado de qualquer computador.</p>
-            </div>
-          </div>
-          <div id="card">
-            <div class="circle">
-              <i style="color: white;" class="fa-sharp fa-solid fa-mobile-screen-button fa-3x"></i>
-            </div>
-            <!-- Trocar o texto do p  -->
-            <div id="cardContent">
-              <h3>Apps Mobilie</h3>
-              <p>Sistemas Web ou Desktop personalizados, usados para automatizar processos e diminuir custos.
-                Desenvolvidos de maneira otimizada e segura, podendo ser acessado de qualquer computador.</p>
-            </div>
-          </div>
-        </div>
-        </div>
-      </section>    
-    </main>
-    <!-- Parcerias -->
-    <!-- 
-      <section id="parcerias">
-      <div id="header-partnerships">
-        <div id="Gp-Lines-1"> 
-          <div id="line1"></div>
-          <div id="line2"></div>
-        </div> 
-        <h3>Nossas Parcerias</h3>
-        <div id="Gp-Lines-2">
-          <div id="line3"></div>
-          <div id="line4"></div>
-        </div>
-      </div>
-      <div class="carousel">
-        <div class="carousel-track">
-          <div class="carousel-item">
-            <img src="assets/images/image1.jpg">
-          </div>
-          <div class="carousel-item">
-            <img src="assets/images/image2.jpg">
-          </div>
-          <div class="carousel-item">
-            <img src="assets/images/image3.jpg">
-          </div>
-          <div class="carousel-item">
-            <img src="assets/images/image4.jpg">
-          </div>
-          <div class="carousel-item" alt="last">
-            <img src="assets/images/image5.jpg">
-          </div>
-          <div class="carousel-item">
-            <img src="assets/images/image1.jpg">
-          </div>
-          <div class="carousel-item">
-            <img src="assets/images/image2.jpg">
-          </div> 
-          <div class="carousel-item">
-            <img src="assets/images/image3.jpg">
-          </div>
-          <div class="carousel-item">
-            <img src="assets/images/image4.jpg">
-          </div>
-          <div class="carousel-item" alt="last">
-            <img src="assets/images/image5.jpg">
-          </div>
-        </div>
-        
-      </div>
-    </section>
-    -->
-    
-    <!-- Conheça as Vantagens de contratar InfoAlto empresa júnior -->
-    <div id="bg-vantagens">
-      <div id="vantagens-overlay"></div>
-      <section id="vantagens">
-        <h2>Conheça as Vantagens</h2>
-        <h3>de contratar InfoAlto empresa júnior</h3>
-        <div id="row1"></div>
-        <div id="row2"></div>
-        <div id="benefits">
-          <div id="benefitsCard">
-            <i style="color: #114977;" class="fa-regular fa-money-bill-1 fa-3x"></i>
-            <div id="benfitsCardText">
+      <section class="benefits">
+        <div class="overlay-benefits"></div>
+        <div class="benefits-content">
+          <h1>Conheça as Vantagens</h1>
+          <p class="sub">de contratar InfoAlto empresa júnior</p>
+          <div class="row-1"></div>
+          <div class="row-2"></div>
+          <div class="benefitsCards">
+            <div class="benefitsCard">
+              <i
+                style="color: #114977"
+                class="fa-regular fa-money-bill-1 fa-3x"
+              ></i>
               <h4>Preços Acessíveis</h4>
-              <p>Somos uma empresa sem fins lucrativos, sendo assim, não recebemos salários e somos isentos de certos
-                impostos. Estamos regulamentados e trabalhamos sob a lei nº 13.267, de 2016.</p>
+              <p>
+                Somos uma empresa sem fins lucrativos, sendo assim, não
+                recebemos salários e somos isentos de certos impostos. Estamos
+                regulamentados e trabalhamos sob a lei nº 13.267, de 2016.
+              </p>
             </div>
-          </div>
-          <div id="benefitsCard">
-            <i style="color: #114977;" class="fa-solid fa-graduation-cap fa-3x"></i>
-            <div id="benfitsCardText">
+            <div class="benefitsCard">
+              <i
+                style="color: #114977"
+                class="fa-solid fa-graduation-cap fa-3x"
+              ></i>
               <h4>Competência</h4>
-              <p>Somos uma empresa júnior composta por estudantes do curso de Sistemas de Informação da Universidade
-                Federal
-                de Viçosa e contamos com a assistência da nossa professora coordenadora, garantindo qualidade sênior.</p>
+              <p>
+                Somos uma empresa júnior composta por estudantes do curso de
+                Sistemas de Informação da Universidade Federal de Viçosa e
+                contamos com a assistência da nossa professora coordenadora,
+                garantindo qualidade sênior.
+              </p>
             </div>
-          </div>
-          <div id="benefitsCard">
-            <i style="color: #114977;" class="fa-solid fa-handshake fa-3x"></i>
-            <div id="benfitsCardText">
+            <div class="benefitsCard">
+              <i style="color: #114977" class="fa-solid fa-handshake fa-3x"></i>
               <h4>Compromisso</h4>
-              <p>Tenha uma equipe dedicada exclusivamente ao seu projeto, do início ao fim. Somos membros focados,
-                compromissados em resultados, buscando sempre impactar na vida dos nossos clientes.</p>
+              <p>
+                Tenha uma equipe dedicada exclusivamente ao seu projeto, do
+                início ao fim. Somos membros focados, compromissados em
+                resultados, buscando sempre impactar na vida dos nossos
+                clientes.
+              </p>
             </div>
           </div>
         </div>
       </section>
-      <section id="numbers">
-        <div id="numbers-overlay"></div>
-        <div id="numbersContent">
-          <h2>Nossos <br /> Números</h2>
-          <div id="numbersCardContainer">
-            <div id="numbersCard">
+      <section class="numbers">
+        <div class="overlay-numbers"></div>
+        <div class="numbers-content">
+          <h2>
+            Nossos <br />
+            Números
+          </h2>
+          <div class="numbers-cards">
+            <div class="number-card">
               <span data-val="12" class="num">00</span>
               <h4>ANOS DE HISTÓRIA</h4>
             </div>
-            <div id="numbersCard">
+            <div class="number-card">
               <span data-val="100" class="num">+00</span>
               <h4>PROJETOS ENTREGUES</h4>
             </div>
-            <div id="numbersCard">
+            <div class="number-card">
               <span data-val="150" class="num">+000</span>
               <h4>CLIENTES SATISFEITOS</h4>
             </div>
           </div>
         </div>
       </section>
-  
-    </div>
-  
-    <section id="portfolio">
-      <h2>Nosso Portfólio</h2>
-      <div id="row1"></div>
-      <div id="row2"></div>
-      <div id="portfolioExamples">
-        <img src="assets/images/portfolio/drogariamm.png" alt="drogariamm" />
-        <img src="assets/images/portfolio/drogariamm.png" alt="drogariamm" />
-        <img src="assets/images/portfolio/drogariamm.png" alt="drogariamm" />
+      <section class="portfolio">
+        <div class="portfolio-content">
+          <h1>Nosso Portfólio</h1>
+          <div class="row-1"></div>
+          <div class="row-2"></div>
+          <div class="wrapper">
+            <img
+              src="./assets/images/portfolio/drogariamm.png"
+              alt="Drogariamm"
+            />
+            <img
+              src="./assets/images/portfolio/drogariamm.png"
+              alt="Drogariamm"
+            />
+            <img
+              src="./assets/images/portfolio/drogariamm.png"
+              alt="Drogariamm"
+            />
+          </div>
+          <button class="btn-portfolio">Veja mais</button>
+        </div>
+      </section>
+      <div class="waveContainer">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          preserveAspectRatio="none"
+        >
+          <path
+            class="wave"
+            opacity="0.33"
+            d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z"
+          ></path>
+          <path
+            class="wave"
+            opacity="0.66"
+            d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z"
+          ></path>
+          <path
+            class="wave"
+            d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z"
+          ></path>
+        </svg>
       </div>
-      <button id="btn-portfolio">Ver mais</button>
-    </section>
-    <div class="waveContainer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
-        <path class="wave" opacity="0.33" d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z"></path>
-        <path class="wave" opacity="0.66" d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z"></path>
-        <path class="wave" d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z"></path>
-      </svg>
-    </div>
-    <section id="depositions">   
-      <div id="depositions-overlay">      
-        <h1>O que nossos <b>clientes</b> dizem</h1>  
-        <div class="slideshow-container">
-          <!-- Depoimento -->
-          <div class="mySlides">
-            <div class="text-div-depositions">
-              <p class="textdepositions">"Cuidado nos detalhes, agilidade e qualidade descreverem a experiência de ter realizado um projeto com a Infoalto! Parabéns pela atenção e profissionalismo! Sucesso!"</p>
+      <section class="depositions">
+        <div class="depositions-overlay">
+          <h1>O que nossos <b>clientes</b> dizem</h1>
+          <div class="slideshow-container">
+            <!-- Depoimento -->
+            <div class="mySlides">
+              <div class="text-div-depositions">
+                <p class="textdepositions">
+                  "Cuidado nos detalhes, agilidade e qualidade descreverem a
+                  experiência de ter realizado um projeto com a Infoalto!
+                  Parabéns pela atenção e profissionalismo! Sucesso!"
+                </p>
+              </div>
+              <div class="text-slide-div-depositions">
+                <p class="namedepositions">Luana Freitas</p>
+                <p class="profdepositions">Presidente FEJEMG 2020</p>
+              </div>
             </div>
-            <div class="text-slide-div-depositions">
-              <p class="namedepositions">Luana Freitas</p>
-              <p class="profdepositions">Presidente FEJEMG 2020</p>
+
+            <!-- Depoimento -->
+            <div class="mySlides">
+              <div class="text-div-depositions">
+                <p class="textdepositions">
+                  "Percebemos muito profissionalismo, dedicação e seriedade por
+                  parte de toda equipe, ficamos satisfeitos pela parceria, tais
+                  atitudes demonstram que a infoalto esta no caminho certo rumo
+                  a inovação."
+                </p>
+              </div>
+              <div class="text-slide-div-depositions">
+                <p class="namedepositions">Elismar Pereira</p>
+                <p class="profdepositions">Evoluir Brasil</p>
+              </div>
+            </div>
+
+            <!-- Depoimento -->
+            <div class="mySlides">
+              <div class="text-div-depositions">
+                <p class="textdepositions">
+                  "Caneta azul, azul caneta <br />Caneta azul tá marcada com
+                  minha letra "
+                </p>
+              </div>
+              <div class="text-slide-div-depositions">
+                <p class="namedepositions">Manoel Gomes</p>
+                <p class="profdepositions">Cantor</p>
+              </div>
             </div>
           </div>
-        
-          <!-- Depoimento -->
-          <div class="mySlides">
-            <div class="text-div-depositions">
-              <p class="textdepositions">"Percebemos muito profissionalismo, dedicação e seriedade por parte de toda equipe, ficamos satisfeitos pela parceria, tais atitudes demonstram que a infoalto esta no caminho certo rumo a inovação."</p>
-            </div>
-            <div class="text-slide-div-depositions">
-              <p class="namedepositions">Elismar Pereira</p>
-              <p class="profdepositions">Evoluir Brasil</p>
-            </div>
+          <!-- Setas Prev e Next -->
+          <div class="depositions-btts">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides( 1)">&#10095;</a>
           </div>
-        
-          <!-- Depoimento -->
-          <div class="mySlides">
-            <div class="text-div-depositions">
-              <p class="textdepositions">"Caneta azul, azul caneta <br>Caneta azul tá marcada com minha letra
-              "</p>
-            </div>
-            <div class="text-slide-div-depositions">
-              <p class="namedepositions"> Manoel Gomes </p>
-              <p class="profdepositions"> Cantor </p>
-            </div>
+
+          <!-- Botões  Inferiores -->
+          <div class="depositions-dots" style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
           </div>
-        
-          
         </div>
-        <!-- Setas Prev e Next -->
-        <div class="depositions-btts">
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides( 1)">&#10095;</a>
-          
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <img
+          id="footer-logo"
+          src="./assets/images/logos/logo-infoalto-branca-branca-extendida.png"
+          alt="InfoAlto Logo Branca"
+        />
+        <div class="footer-menu">
+          <li>Inicio</li>
+          <li>Inicio</li>
+          <li>Inicio</li>
+          <li>Inicio</li>
         </div>
-  
-        <!-- Botões  Inferiores -->
-        <div class="depositions-dots" style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span> 
-          <span class="dot" onclick="currentSlide(2)"></span> 
-          <span class="dot" onclick="currentSlide(3)"></span> 
+        <div class="footer-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3168.0562864112608!2d-46.22473277795346!3d-19.2181163418732!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9ca9bcf2a5fa3e3d!2sInfoAlto%20-%20Empresa%20J%C3%BAnior!5e0!3m2!1spt-BR!2sus!4v1674491040886!5m2!1spt-BR!2sus"
+            width="305"
+            height="201"
+            style="border: 0; border-radius: 5px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
-                
-      </div>
-    </section>
-        
-    <!-- Serviços Digitais  -->
-    <footer id="footer">
-      <div id="footerContent">
-        <img src="./assets/images/logo-infoalto-branca-branca-extendida.png" alt="InfoAlto Logo Branco">
-        <nav id="footerMenu">
-          <li>Inicio</li>
-          <li>Inicio</li>
-          <li>Inicio</li>
-          <li>Inicio</li>
-          <li>Inicio</li>
-          <li>Inicio</li>
-        </nav>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3168.0562864112608!2d-46.22473277795346!3d-19.2181163418732!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9ca9bcf2a5fa3e3d!2sInfoAlto%20-%20Empresa%20J%C3%BAnior!5e0!3m2!1spt-BR!2sus!4v1674491040886!5m2!1spt-BR!2sus"
-          width="305" height="201" style="border:0; border-radius: 5px;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <h4>Entre em contato</h4>
+        <div class="footer-contact">
+          <h4>Entre em contato</h4>
+        </div>
       </div>
     </footer>
-    <a href="https://api.whatsapp.com/send?phone=5534998430039&text=Ola%20gostaria" class="float" target="_blank">
-      <i class="fa-brands fa-whatsapp my-float"></i>
-    </a>
     <script>
-      let values = document.querySelectorAll('.num');
+      function change() {
+        if (window.innerWidth >= 768) {
+          items.style.display = "block";
+        } else {
+          items.style.display = "none";
+        }
+      }
+      function clickMenu() {
+        if (items.style.display === "block") {
+          items.style.display = "none";
+        } else {
+          items.style.display = "block";
+        }
+      }
+      let values = document.querySelectorAll(".num");
       let time = 5000;
-      values.forEach(item => {
+      values.forEach((item) => {
         let start = 0;
         let end = parseInt(item.getAttribute("data-val"));
         let duration = Math.floor(time / end);
         let counter = setInterval(() => {
           start += 1;
-          item.textContent = '+' + start;
+          item.textContent = "+" + start;
           if (start === end) {
-            clearInterval(counter)
+            clearInterval(counter);
           }
-        }, duration)
-      })
+        }, duration);
+      });
     </script>
-    <script src="assets/js/slider.js"></script>
-    <script src="assets/js/particles.min.js"></script>
-    <script src="assets/js/app.js"></script>
-  </section>
-</body>
-
+    <script src="./assets/js/slider.js"></script>
+    <script src="./assets/js/particles.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
 </html>
