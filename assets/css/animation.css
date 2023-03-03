@@ -1,0 +1,26 @@
+@keyframes slide-left {
+  to {
+    transform: initial;
+    opacity: initial;
+  }
+}
+
+@keyframes slide-right {
+  to {
+    transform: initial;
+    opacity: initial;
+  }
+}
+
+@keyframes slide-down {
+  to {
+    transform: initial;
+    opacity: initial;
+  }
+}
+
+@keyframes opacity {
+  to {
+    opacity: initial;
+  }
+}

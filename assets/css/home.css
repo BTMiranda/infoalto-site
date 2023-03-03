@@ -10,6 +10,10 @@ body * {
   font-family: var(--font-global);
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* Cabeçalho */
 
 .navigation {
@@ -43,17 +47,6 @@ menu {
   border-radius: 0.3rem;
   cursor: pointer;
   font-weight: 500;
-}
-
-.navigation ul li.onActive::before {
-  content: "";
-  position: absolute;
-  width: 4.7rem;
-  height: 0.3rem;
-  background-color: var(--text-color);
-  bottom: 0;
-  border-top-right-radius: 1rem;
-  border-top-left-radius: 1rem;
 }
 
 .logo {
@@ -195,6 +188,9 @@ menu {
 .about-us .content .wrapper .texts {
   display: grid;
   gap: 2.3rem;
+  transform: translateX(-10rem);
+  opacity: 0;
+  animation: slide-right 3s forwards;
 }
 
 .about-us .content .wrapper h1 {
@@ -246,6 +242,8 @@ menu {
   -webkit-box-shadow: 1rem 1rem 3.4rem -1.3rem rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 1rem 1rem 3.4rem -1.3rem rgba(0, 0, 0, 0.75);
   box-shadow: 1rem 1rem 3.4rem -1.3rem rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  animation: opacity 3s forwards ease-in-out;
 }
 
 /* Conheça Nossos Serviços */
@@ -295,6 +293,8 @@ menu {
   flex-direction: column;
   margin-top: 2rem;
   gap: 2rem;
+  opacity: 0;
+  animation: opacity 3s forwards ease-in-out;
 }
 
 .card {
@@ -417,6 +417,24 @@ menu {
   display: grid;
   gap: 1.5rem;
   padding: 1rem;
+}
+
+.benefitsCard:nth-child(1) {
+  animation: slide-right 3s forwards;
+  transform: translateX(-10rem);
+  opacity: 0;
+}
+
+.benefitsCard:nth-child(2) {
+  animation: slide-down 3s forwards;
+  transform: translateY(2rem);
+  opacity: 0;
+}
+
+.benefitsCard:nth-child(3) {
+  animation: slide-left 3s forwards;
+  transform: translateX(10rem);
+  opacity: 0;
 }
 
 .benefitsCard i {
@@ -543,6 +561,8 @@ menu {
   -webkit-box-shadow: 1rem 1rem 3.4rem -1.3rem rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 1rem 1rem 3.4rem -1.3rem rgba(0, 0, 0, 0.75);
   box-shadow: 1rem 1rem 3.4rem -1.3rem rgba(0, 0, 0, 0.75);
+  animation: opacity 3s forwards;
+  opacity: 0;
 }
 
 .portfolio .portfolio-content .wrapper {
@@ -944,6 +964,17 @@ footer {
   }
   menu > ul > li {
     display: inline-block;
+  }
+
+  .navigation ul li.onActive::before {
+    content: "";
+    position: absolute;
+    width: 4.7rem;
+    height: 0.3rem;
+    background-color: var(--text-color);
+    bottom: 0;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
   }
 
   .slider .content {
