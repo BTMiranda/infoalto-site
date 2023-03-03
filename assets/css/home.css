@@ -21,6 +21,7 @@ body * {
   align-items: center;
   gap: 3rem;
   text-align: center;
+  position: relative;
 }
 
 menu {
@@ -31,6 +32,7 @@ menu {
   display: grid;
   gap: 1rem;
   list-style: none;
+  align-items: center;
 }
 
 .navigation ul li {
@@ -40,6 +42,18 @@ menu {
   padding: 1rem;
   border-radius: 0.3rem;
   cursor: pointer;
+  font-weight: 500;
+}
+
+.navigation ul li.onActive::before {
+  content: "";
+  position: absolute;
+  width: 4.7rem;
+  height: 0.3rem;
+  background-color: var(--text-color);
+  bottom: 0;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
 }
 
 .logo {
@@ -60,7 +74,7 @@ menu {
 }
 
 .icons i {
-  font-size: 1.8rem;
+  font-size: 2.4rem;
 }
 
 .slider {
@@ -757,13 +771,22 @@ footer {
 .footer-menu {
   list-style: none;
   display: grid;
-  gap: 1rem;
+  gap: 1.4rem;
+  text-align: center;
+}
+
+.footer-menu-active {
+  color: var(--bg-color);
 }
 
 .footer-menu li {
   color: var(--text-color);
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 500;
+}
+
+.footer-menu li.footer-menu-active {
+  color: var(--bg-color);
 }
 
 .footer-contact h4 {
