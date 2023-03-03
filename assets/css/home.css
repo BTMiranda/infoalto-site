@@ -6,6 +6,11 @@
   --font-titles: "Quicksand", sans-serif;
 }
 
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 body * {
   font-family: var(--font-global);
 }
