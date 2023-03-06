@@ -177,7 +177,7 @@ menu {
   flex-direction: column;
   gap: 2rem;
   z-index: 2;
-  padding: 2rem;
+  padding: 2rem 10rem;
 }
 
 .about-us .content .wrapper {
@@ -411,7 +411,7 @@ menu {
 .benefitsCards {
   display: grid;
   gap: 3rem;
-  margin-top: 3rem;
+  margin: 3rem 6rem;
 }
 
 .benefitsCard {
@@ -482,6 +482,10 @@ menu {
   left: 0;
   opacity: 0.91;
   z-index: 1;
+}
+
+.numbers-content h2{
+  color: #ffffff;
 }
 
 .numbers-content {
