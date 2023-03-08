@@ -63,19 +63,19 @@
         </form>
       </div>
     </div>
-
+    <span id="top"></span>
     <header class="header">
-      <nav class="navigation">
-        <img
-          class="logo"
-          id="logo"
-          src="./assets/images/logos/logo-infoalto-branca-branca-extendida.png"
-          alt="Logo InfoAlto"
-        />
+      <nav class="navigation">         
+          <img 
+            class="logo"
+            id="logo"
+            src="./assets/images/logos/logo-infoalto-branca-branca-extendida.png"
+            alt="Logo InfoAlto"            
+          />
         <i
           onclick="clickMenu()"
           id="burger"
-          style="color: white"
+          style="color: #ffffff"
           class="fa-sharp fa-solid fa-bars fa-2xl"
         ></i>
         <menu id="items">
@@ -90,10 +90,18 @@
         </menu>
 
         <div class="icons">
-          <i style="color: white" class="fa-brands fa-facebook fa-xl"></i>
-          <i style="color: white" class="fa-brands fa-instagram fa-xl"></i>
-          <i style="color: white" class="fa-brands fa-linkedin fa-xl"></i>
-          <i style="color: white" class="fa-brands fa-twitter fa-xl"></i>
+          <a href="https://www.facebook.com/InfoAlto">
+            <i style="color: #ffffff" class="fa-brands fa-facebook fa-xl"></i>
+          </a>
+          <a href="https://www.instagram.com/infoalto/">
+            <i style="color: #ffffff" class="fa-brands fa-instagram fa-xl"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/infoalto/mycompany/">
+            <i style="color: #ffffff" class="fa-brands fa-linkedin fa-xl"></i>
+          </a>
+          <a href="https://twitter.com/InfoAlto_">
+            <i style="color: #ffffff" class="fa-brands fa-twitter fa-xl"></i>
+          </a>          
         </div>
       </nav>
       <div class="slider">
@@ -145,7 +153,7 @@
                 <div class="card" id="card">
                   <div class="circle">
                     <i
-                      style="color: white"
+                      style="color: #ffffff"
                       class="fa-sharp fa-solid fa-desktop fa-3x"
                     ></i>
                   </div>
@@ -161,7 +169,7 @@
                 <div class="card" id="card">
                   <div class="circle">
                     <i
-                      style="color: white"
+                      style="color: #ffffff"
                       class="fa-sharp fa-solid fa-basket-shopping fa-3x"
                     ></i>
                   </div>
@@ -178,7 +186,7 @@
                 <div class="card" id="card">
                   <div class="circle">
                     <i
-                      style="color: white"
+                      style="color: #ffffff"
                       class="fa-sharp fa-solid fa-network-wired fa-3x"
                     ></i>
                   </div>
@@ -195,7 +203,7 @@
                 <div class="card" id="card">
                   <div class="circle">
                     <i
-                      style="color: white"
+                      style="color: #ffffff"
                       class="fa-sharp fa-solid fa-mobile-screen-button fa-3x"
                     ></i>
                   </div>
@@ -282,18 +290,26 @@
           <div class="row-1"></div>
           <div class="row-2"></div>
           <div class="wrapper">
-            <img
-              src="./assets/images/portfolio/drogariamm.png"
-              alt="Drogariamm"
-            />
-            <img
-              src="./assets/images/portfolio/drogariamm.png"
-              alt="Drogariamm"
-            />
-            <img
-              src="./assets/images/portfolio/drogariamm.png"
-              alt="Drogariamm"
-            />
+            <a href="https://pucjunior.com/">
+              <img
+                src="./assets/images/portfolio/pucjr.png"
+                alt="PucJr"
+              />
+            </a>
+
+            <a href="https://menutriconsultoriajr.com.br/">
+              <img
+                src="./assets/images/portfolio/menutri.png"
+                alt="MeNutri"
+              />
+            </a>
+
+            <a href="https://concretajr.com/">
+              <img
+                src="./assets/images/portfolio/concreta.png"
+                alt="Concreta"
+              />
+            </a>
           </div>
           <button class="btn-portfolio">Veja mais</button>
         </div>
@@ -322,7 +338,7 @@
       </div>
       <section class="depositions">
         <div class="depositions-overlay">
-          <h1>O que nossos <b>clientes</b> dizem</h1>
+          <h1>O que nossos clientes dizem</h1>
           <div class="slideshow-container">
             <!-- Depoimento -->
             <div class="mySlides">
@@ -386,11 +402,37 @@
     </main>
     <footer>
       <div class="footer-content">
-        <img
-          id="footer-logo"
-          src="./assets/images/logos/logo-infoalto-branca-branca-extendida.png"
-          alt="InfoAlto Logo Branca"
-        />
+        <!-- Mapa -->
+        <div class="footer-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3168.0562864112608!2d-46.22473277795346!3d-19.2181163418732!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9ca9bcf2a5fa3e3d!2sInfoAlto%20-%20Empresa%20J%C3%BAnior!5e0!3m2!1spt-BR!2sus!4v1674491040886!5m2!1spt-BR!2sus"
+            width="305"
+            height="201"
+            style="border: 0; border-radius: 5px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <!-- Contato -->
+        <div class="footer-contact">
+          <h4>Entre em contato</h4>
+          <div class="footer-contact-sub">
+            <i style="color: #ffffff"  class="fa-solid fa-location-dot fa-2x"></i>   
+            <p><b>Endereço: </b>Rodovia MG-230, km 07 - PVA 121 Campus Universitário, Rio Paranaíba - MG, 38810-000, Brasil</p>
+          </div>
+          <div class="footer-contact-sub">
+            <i style="color: #ffffff" class="fa-solid fa-phone-volume fa-2x"></i> 
+            <p><b>Telefone: </b>+55 (34) 3855-9596</p>
+          </div>
+          <div class="footer-contact-sub">
+            <i style="color: #ffffff" class="fa-solid fa-envelope fa-2x"></i>
+            <p><b>Email: </b>contato@infoalto.com.br</p>
+          </div>
+        </div>
+
+        <!-- Menu -->
         <div class="footer-menu">
           <li class="footer-menu-active">
             <i class="fa-sharp fa-solid fa-arrow-right footer-menu-active"></i>
@@ -413,20 +455,20 @@
             Contato
           </li>
         </div>
-        <div class="footer-map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3168.0562864112608!2d-46.22473277795346!3d-19.2181163418732!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9ca9bcf2a5fa3e3d!2sInfoAlto%20-%20Empresa%20J%C3%BAnior!5e0!3m2!1spt-BR!2sus!4v1674491040886!5m2!1spt-BR!2sus"
-            width="305"
-            height="201"
-            style="border: 0; border-radius: 5px"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-        <div class="footer-contact">
-          <h4>Entre em contato</h4>
-        </div>
+      
+        <!-- Logo -->
+        <a href="#top">
+          <img
+            id="footer-logo"
+            src="./assets/images/logos/logo-infoalto-branca-branca-extendida.png"
+            alt="InfoAlto Logo Branca"
+          />
+        </a>
+        
+      </div>
+      <div class="footer-developed">
+        <div class="row-white"></div>
+        <p>Desenvolvido com &#10084;&#65039; por InfoAlto Empresa Júnior</p>
       </div>
     </footer>
     <script>
