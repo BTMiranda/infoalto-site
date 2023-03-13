@@ -72,8 +72,8 @@ menu {
   font-size: 2.4rem;
 }
 
-.icons i:hover { 
-  filter: grayscale(100%);  
+.icons i:hover {
+  filter: grayscale(100%);
 }
 
 .slider {
@@ -181,7 +181,7 @@ menu {
   flex-direction: column;
   gap: 2rem;
   z-index: 2;
-  padding: 2rem 10rem;
+  padding: 2rem 2rem;
 }
 
 .about-us .content .wrapper {
@@ -197,6 +197,7 @@ menu {
   transform: translateX(-10rem);
   opacity: 0;
   animation: slide-right 3s forwards;
+  text-align: center;
 }
 
 .about-us .content .wrapper h1 {
@@ -209,7 +210,7 @@ menu {
 .about-us .content .wrapper h1::before {
   content: "";
   position: absolute;
-  width: 27.5rem; 
+  width: 27.5rem;
   height: 0.6rem;
   background-color: var(--bg-color);
   bottom: -1rem;
@@ -275,7 +276,7 @@ menu {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 1rem;  
+  gap: 1rem;
 }
 
 .row-1 {
@@ -359,7 +360,7 @@ menu {
 /* Conheça as Vantagens */
 
 .benefits {
-  height: 97rem;
+  height: 120rem;
   width: 100%;
   background: url("../images/overlay/image4.jpg");
   background-attachment: fixed;
@@ -368,7 +369,7 @@ menu {
   background-size: cover;
   position: relative;
   z-index: 0;
-  margin-top: 23rem;
+  margin-top: 18rem;
 }
 
 .overlay-benefits {
@@ -499,7 +500,7 @@ menu {
 }
 
 .numbers-content h2 {
-  font-size:6rem;
+  font-size: 6rem;
   color: var(--text-color);
   font-family: var(--font-titles);
   font-weight: 400;
@@ -509,7 +510,7 @@ menu {
 
 .numbers-cards {
   display: flex;
-    flex-wrap: wrap;
+  flex-wrap: wrap;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
   margin-top: 6rem;
@@ -520,7 +521,7 @@ menu {
   place-content: center;
   place-items: center;
   gap: 2rem;
-  width: 12rem;   
+  width: 12rem;
   height: 9rem;
   background: var(--bg-color);
   border-radius: 0.3rem;
@@ -532,7 +533,7 @@ menu {
 .number-card span {
   color: var(--text-color);
   font-size: 1rem;
-  font-weight: 600; 
+  font-weight: 600;
 }
 
 .number-card h4 {
@@ -564,7 +565,16 @@ menu {
   letter-spacing: 3px;
 }
 
-.portfolio .portfolio-content .wrapper img {
+.portfolio .portfolio-content .wrapper {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  place-content: center;
+  place-items: center;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+.portfolio .portfolio-content .wrapper a img {
   width: 100%;
   height: 25.9rem;
   border-radius: 0.3rem;
@@ -573,14 +583,6 @@ menu {
   box-shadow: 1rem 1rem 3.4rem -1.3rem rgba(0, 0, 0, 0.75);
   animation: opacity 3s forwards;
   opacity: 0;
-}
-
-.portfolio .portfolio-content .wrapper {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  place-content: center;
-  place-items: center;
-  gap: 3rem;
 }
 
 .btn-portfolio {
@@ -601,8 +603,8 @@ menu {
   cursor: pointer;
 }
 
-.btn-portfolio:visited {    
-  background: #ff0000;   
+.btn-portfolio:visited {
+  background: #ff0000;
 }
 
 /* Wave */
@@ -631,7 +633,7 @@ svg {
   position: relative;
   width: 100%;
   height: 65vh;
-  z-index: 1; 
+  z-index: 1;
   text-align: center;
 }
 
@@ -644,7 +646,7 @@ svg {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #114977; 
+  background: #114977;
   /* opacity: 0.93; */
   z-index: 0;
 }
@@ -751,8 +753,9 @@ svg {
   max-width: 100rem;
   position: relative;
   margin: auto;
-  margin-top: 12rem;
+  margin-top: 4rem;
   width: 75%;
+  padding: 2rem;
 }
 .mySlides p {
   font-size: 1.5rem;
@@ -786,10 +789,10 @@ svg {
 
 footer {
   background-color: #282828;
-  min-height: 50vh; 
+  min-height: 50vh;
 }
 
-.footer-contact-sub{  
+.footer-contact-sub {
   /* position: absolute; */
   align-items: center;
   display: flex;
@@ -798,27 +801,18 @@ footer {
   justify-content: center;
 }
 
-.footer-contact-sub i{  
-  padding: 1rem; 
+.footer-contact-sub i {
+  padding: 1rem;
   justify-content: center;
-
 }
 
-.footer-contact{ 
+.footer-contact {
   text-align: center;
   justify-content: center;
-} 
-
-.footer-content {
-  padding-top: 3rem;
-  display: grid;
-  place-content: center;
-  place-items: center;
-  gap: 3rem;
 }
 
 .footer-content img {
-  width: 31.9rem;
+  width: 100%;
   height: 11.5rem;
 }
 
@@ -844,7 +838,7 @@ footer {
 }
 
 .footer-contact p {
-  font-size: 1.3rem; 
+  font-size: 1.3rem;
   color: #ffffff;
   width: 25rem;
   margin-top: 1rem;
@@ -854,6 +848,35 @@ footer {
   font-weight: 600;
   color: var(--text-color);
   font-size: 1.8rem;
+}
+
+.footer-content {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.footer-developed {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* padding: 2rem;   */
+}
+
+.footer-developed p {
+  font-size: 1.3rem;
+  color: #ffffff;
+}
+
+.row-white {
+  background: #ffffff;
+  width: 90%;
+  height: 0.1rem;
+  margin: 1rem 1rem;
 }
 
 /* Botão do WhatsApp */
@@ -1042,8 +1065,16 @@ footer {
     height: 99rem;
   }
 
+  .about-us .content {
+    padding: 2rem 10rem;
+  }
+
   .about-us .content .wrapper p {
     font-size: 1.5rem;
+  }
+
+  .about-us .content .wrapper .texts {
+    text-align: left;
   }
 
   .btn-about-us {
@@ -1106,37 +1137,8 @@ footer {
     flex-wrap: wrap;
   }
 
-  .portfolio .portfolio-content .wrapper img {
-    width: 36rem;
-    height: 26rem;
-  }
-
-  .footer-content {
-    padding: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-
-  .footer-developed{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    /* padding: 2rem;   */
-  }
-
-  .footer-developed p{
-    font-size: 1.3rem;
-    color: #ffffff;     
-  }
-
-  .row-white{
-    background: #ffffff;
-    width: 90%; 
-    height: 0.1rem;  
-    margin: 1rem 1rem;  
+  .portfolio .portfolio-content .wrapper a img {
+    height: 22rem;
   }
 
   .numbers-cards {
@@ -1145,13 +1147,13 @@ footer {
     gap: 1rem;
     margin-top: 6rem;
   }
-  
+
   .number-card {
     display: grid;
     place-content: center;
     place-items: center;
     gap: 2rem;
-    width: 22rem;   
+    width: 22rem;
     height: 16rem;
     background: var(--bg-color);
     border-radius: 0.3rem;
@@ -1159,15 +1161,15 @@ footer {
     -moz-box-shadow: 1rem 1rem 3.4rem -1.3rem rgba(0, 0, 0, 0.75);
     box-shadow: 1rem 1rem 3.4rem -1.3rem rgba(0, 0, 0, 0.75);
   }
-  
+
   .number-card span {
     color: var(--text-color);
     font-size: 6rem;
-    font-weight: 600; 
+    font-weight: 600;
   }
-  
+
   .number-card h4 {
-    font-size: 1.3rem;  
+    font-size: 1.3rem;
     font-weight: 400;
     color: var(--text-color);
   }
