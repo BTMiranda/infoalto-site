@@ -574,15 +574,46 @@ menu {
   padding: 2rem;
 }
 
+.portfolio .portfolio-content .wrapper a {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio .portfolio-content .wrapper a:hover .overlay {
+  opacity: 0.8;
+}
+
 .portfolio .portfolio-content .wrapper a img {
   width: 100%;
   height: 25.9rem;
   border-radius: 0.3rem;
-  -webkit-box-shadow: 1rem 1rem 3.4rem -1.3rem rgba(0, 0, 0, 0.75);
+  /* -webkit-box-shadow: 1rem 1rem 3.4rem -1.3rem rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 1rem 1rem 3.4rem -1.3rem rgba(0, 0, 0, 0.75);
-  box-shadow: 1rem 1rem 3.4rem -1.3rem rgba(0, 0, 0, 0.75);
+  box-shadow: 1rem 1rem 3.4rem -1.3rem rgba(0, 0, 0, 0.75); */
   animation: opacity 3s forwards;
   opacity: 0;
+  overflow: hidden;
+}
+
+.portfolio .portfolio-content .wrapper a .overlay {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #111;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  border-radius: 0.3rem;
+  opacity: 0;
+  transition: 0.5s ease;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  justify-content: space-around;
 }
 
 .btn-portfolio {
