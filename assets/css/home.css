@@ -41,6 +41,10 @@ menu {
   align-items: center;
 }
 
+menu a {
+  text-decoration: none;
+}
+
 .navigation ul li {
   color: var(--text-color);
   font-size: 1.6rem;
