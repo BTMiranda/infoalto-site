@@ -35,35 +35,95 @@
   </head>
   <body>
     <main>
-      <section class="menu">
-        <img
-          class="logo"
-          src="./assets/images/logos/logo-infoalto-branca.png"
-          alt="InfoAlto Logo Branca"
-        />
-        <div class="container">
-          <div class="menu-items">
-            <h1>#Playlists</h1>
-            <ul class="items">
-              <li># 1 - Home</li>
-              <li># 1 - Home</li>
-              <li># 1 - Home</li>
-              <li># 1 - Home</li>
-            </ul>
-          </div>
-          <div class="current-song">
+      <section class="content" id="content">
+        <section class="menu" id="menu">
+          <div class="p-2">
             <img
-              class="dj-infonauta"
-              src="./assets/images/ps/dj-infonauta.png"
-              alt="DJ InfoNauta"
+              class="logo"
+              src="./assets/images/logos/logo-infoalto-branca.png"
+              alt="Logo InfoAlto"
             />
-            <span class="song-name">Inicio das Inscrições</span>
-            <span class="song-artist">DJ - InfoNauta</span>
+          </div>
+          <nav class="p-2">
+            <ul>
+              <a>
+                <img src="./assets/images/ps/home.svg" alt="Home" />
+                <li>Home</li>
+              </a>
+              <a>
+                <img src="./assets/images/ps/add.svg" alt="Playlist" />
+                <li class="playlist-li">Playlist</li>
+              </a>
+            </ul>
+          </nav>
+          <div class="current-song" id="current-song">
+            <img
+              class="dj"
+              src="./assets/images/ps/dj-infonauta.png"
+              alt="Dj"
+            />
+          </div>
+        </section>
+        <section class="main" id="main">
+          <button class="btn-sub">
+            <div class="icon">
+              <img
+                class="user-icon"
+                src="./assets/images/ps/user.svg"
+                alt="User"
+              />
+            </div>
+            Se inscreva
+            <img class="arrow" src="./assets/images/ps/arrow.svg" alt="Arrow" />
+          </button>
+          <div class="container">
+            <span>Pasta de playlist</span>
+            <h1>Processo Seletivo</h1>
+            <button class="btn-play">
+              <i class="fa-solid fa-play"></i>
+            </button>
+            <div class="c-infos">
+              <h2>Entre no nosso Processo Seletivo</h2>
+              <h3>Basta apertar no Play</h3>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="player" id="player">
+        <div class="song-infos">
+          <span class="song-name"
+            >Inicio das Inscrições <i class="fa-solid fa-heart"></i
+          ></span>
+          <span class="song-artist">DJ - InfoNauta</span>
+        </div>
+        <div class="bar">
+          <div class="controls">
+            <div class="shuffle-container">
+              <img
+                class="shuffle"
+                src="./assets/images/ps/shuffle.svg"
+                alt="Shuffle"
+              />
+              <div class="overlay"></div>
+            </div>
+
+            <img
+              class="return"
+              src="./assets/images/ps/return.svg"
+              alt="Return"
+            />
+            <div class="play">
+              <i class="fa-solid fa-pause"></i>
+            </div>
+            <img class="next" src="./assets/images/ps/next.svg" alt="Next" />
+            <img class="cicle" src="./assets/images/ps/cicle.svg" alt="Cicle" />
+          </div>
+          <div id="progress" class="progress">
+            <div class="overlay" id="overlay"></div>
           </div>
         </div>
       </section>
-      <section class="content"></section>
-      <section class="bottom"></section>
     </main>
+    <script src="./assets/js/ps.js"></script>
   </body>
 </html>

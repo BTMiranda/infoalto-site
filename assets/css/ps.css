@@ -5,23 +5,26 @@ body * {
 body {
   height: 100vh;
   background-color: #1d1d1d;
-
-  overflow-x: hidden;
 }
+
 main {
-  width: 100%;
   height: 100vh;
+}
+
+.content {
   display: grid;
-  grid-template-columns: max-content max-content;
-  grid-template-areas:
-    "A B"
-    "A C";
+  grid-template-columns: 1fr 5fr;
 }
 
 .menu {
-  height: 100%;
-  background-color: #000;
-  grid-area: A;
+  background-color: black;
+  max-height: 85vh;
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+}
+
+.p-2 {
+  padding: 2rem;
 }
 
 .logo {
@@ -29,64 +32,266 @@ main {
   height: 7.7rem;
 }
 
-.menu-items {
-  margin-top: 3rem;
-  padding: 2rem;
-}
-
-.container {
+a {
   display: flex;
-  height: 100%;
-  flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
 }
 
-.menu-items h1 {
-  font-weight: 500;
-  font-size: 2.5rem;
-  line-height: 3.8rem;
-  color: #fff;
+a img {
+  width: 3.2rem;
+  height: 3.2rem;
 }
 
-.menu-items ul {
+ul {
+  all: unset;
   list-style: none;
-  color: #fff;
-  margin-top: 3rem;
   display: grid;
-  gap: 0.9rem;
+  gap: 1.5rem;
 }
 
-.menu-items ul li {
-  font-weight: 400;
-  font-size: 1.4rem;
+li {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.playlist-li {
+  color: #a3a3a3;
 }
 
 .current-song {
+  display: flex;
+  justify-content: end;
+}
+
+.main {
+  background: linear-gradient(
+    173.15deg,
+    rgba(31, 109, 173, 0.21) 6.21%,
+    rgba(30, 30, 30, 0) 95.48%
+  );
+  padding: 1rem;
+  overflow-y: scroll;
+}
+
+.btn-sub {
+  width: 19rem;
+  height: 3.7rem;
+  border-radius: 10rem;
+  outline: none;
+  border: 0;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3rem;
+  color: #fff;
+  padding-left: 0.5rem;
+  padding-right: 0.6rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+}
+
+.main::-webkit-scrollbar {
+  display: none;
+}
+
+.btn-sub .icon {
+  background: #fff;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-icon {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.arrow {
+  width: 0.9rem;
+  height: 0.9rem;
+}
+
+.container {
+  margin-top: 5rem;
+  padding-left: 2rem;
+}
+
+.container span {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.container h1 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 16.4rem;
+}
+
+.btn-play {
+  background: #309bf378;
+  width: 4rem;
+  height: 4rem;
+  outline: none;
+  border-radius: 100%;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.btn-play i {
+  font-size: 2rem;
+}
+
+.player {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.c-infos {
+  margin-top: 5rem;
   display: grid;
-  gap: 0.4rem;
+  place-content: center;
+  place-items: center;
+  gap: 4rem;
+}
+
+.c-infos h2 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+
+.c-infos h3 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.song-infos {
+  display: grid;
+  gap: 1rem;
+  padding: 2rem;
 }
 
 .song-name {
+  font-weight: 500;
+  font-size: 1.3rem;
   color: #fff;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.song-name i {
+  color: #309bf3;
+  font-size: 2rem;
 }
 
 .song-artist {
-  color: #fff;
+  color: #d3d3d3;
+  font-weight: 400;
 }
 
-.dj-infonauta {
-  width: 24.5rem;
-  height: 24.5rem;
+.progress {
+  width: 100rem;
+  background-color: #fff;
+  height: 0.7rem;
+  border-radius: 1rem;
+  position: relative;
 }
 
-.content {
-  min-height: 100%;
-  grid-area: B;
-  padding: 10rem;
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  transition: width 0.5s ease-in-out;
+  background: #309bf3;
+  z-index: 1;
+  border-radius: 1rem;
 }
 
-.bottom {
-  grid-area: C;
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.play {
+  width: 4rem;
+  height: 4rem;
+  background-color: #fff;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.play i {
+  font-size: 2rem;
+}
+
+.shuffle {
+  width: 2rem;
+  height: 2rem;
+}
+
+.shuffle-container {
+  display: grid;
+  place-content: center;
+  place-items: center;
+  gap: 0.7rem;
+}
+
+.shuffle-container .active {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #309bf3;
+  border-radius: 100%;
+}
+
+.return {
+  width: 2rem;
+  height: 2rem;
+}
+
+.next {
+  width: 2rem;
+  height: 2rem;
+}
+
+.cicle {
+  width: 2rem;
+  height: 2rem;
+}
+
+.dj {
+  width: 100%;
+  height: 25rem;
+}
+
+.player {
   background-color: #111;
-  width: 100vw;
+  height: 15vh;
 }
