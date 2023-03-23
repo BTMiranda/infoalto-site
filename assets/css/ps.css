@@ -358,6 +358,7 @@ i.headphones {
     background: #11111134;
     position: absolute;
     bottom: 0;
+    padding-bottom: 5rem;
   }
 
   .container {
@@ -378,9 +379,9 @@ i.headphones {
 
   .player {
     width: 100%;
-    height: 8rem;
+    height: 5rem;
     position: fixed;
-    bottom: 4.3rem;
+    bottom: 5.8rem;
     border-radius: 0.5rem;
   }
 
@@ -429,7 +430,7 @@ i.headphones {
     align-items: center;
     justify-content: flex-end;
     margin-right: 5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.3rem;
   }
 
   .song-infos {
@@ -440,8 +441,8 @@ i.headphones {
 
   .dj-mobile {
     display: block;
-    width: 5.5rem;
-    height: 5.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
     border-radius: 0.5rem;
   }
 
