@@ -208,8 +208,16 @@ li {
   font-weight: 400;
 }
 
+.bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .progress {
-  width: 100rem;
+  width: 80%;
   background-color: #fff;
   height: 0.7rem;
   border-radius: 1rem;
@@ -224,7 +232,7 @@ li {
   left: 0;
   height: 100%;
   width: 0%;
-  transition: width 0.5s ease-in-out;
+  transition: width 2s ease-in-out;
   background: #309bf3;
   z-index: 1;
   border-radius: 1rem;
@@ -294,4 +302,162 @@ li {
 .player {
   background-color: #111;
   height: 15vh;
+}
+
+.dj-mobile {
+  display: none;
+}
+
+i.heart {
+  display: none;
+}
+
+i.headphones {
+  display: none;
+}
+
+/*
+
+  Responsividade
+
+*/
+
+@media screen and (max-width: 768px) {
+  .content {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .current-song {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  nav li {
+    display: none;
+  }
+
+  .p-2 {
+    padding: 0;
+  }
+
+  .menu {
+    width: 100%;
+    height: 4rem;
+    background: #11111134;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .container {
+    margin-top: 10rem;
+  }
+
+  .container h1 {
+    line-height: 8rem;
+  }
+
+  .btn-play {
+    margin-top: 3rem;
+  }
+
+  .c-infos h2 {
+    text-align: center;
+  }
+
+  .player {
+    width: 100%;
+    height: 8rem;
+    position: fixed;
+    bottom: 4.3rem;
+    border-radius: 0.5rem;
+  }
+
+  .bar {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 2rem;
+    width: 100%;
+  }
+
+  .progress {
+    width: 90%;
+    height: 0.2rem;
+    border-radius: 0.1rem;
+  }
+
+  .shuffle-container {
+    display: none;
+  }
+
+  .return {
+    display: none;
+  }
+
+  .next {
+    display: none;
+  }
+
+  .cicle {
+    display: none;
+  }
+
+  .play {
+    background: transparent;
+    width: 0;
+    height: 0;
+  }
+
+  .play i {
+    color: #fff;
+  }
+
+  .controls {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .song-infos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dj-mobile {
+    display: block;
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 0.5rem;
+  }
+
+  .song-name i {
+    display: none;
+  }
+
+  i.heart {
+    display: block;
+    font-size: 2rem;
+    color: #309bf3;
+  }
+
+  i.headphones {
+    display: block;
+    font-size: 2rem;
+    color: #fff;
+  }
 }

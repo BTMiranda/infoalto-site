@@ -10,9 +10,10 @@ function getTimeDifferencePercentage(start, end) {
 const overlay = document.getElementById("overlay");
 const start = new Date("2023-03-27");
 const end = new Date("2023-04-02");
-window.onload(() => {
+
+window.onload = function () {
   overlay.style.width = "0%";
   setTimeout(() => {
-    overlay.style.width = "100%";
+    overlay.style.width = getTimeDifferencePercentage(start, end);
   }, 1000);
-});
+};
