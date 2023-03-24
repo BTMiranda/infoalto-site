@@ -7,6 +7,10 @@ body {
   background-color: #1d1d1d;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 main {
   height: 100vh;
 }
@@ -18,7 +22,7 @@ main {
 
 .menu {
   background-color: #000000;
-  max-height: 85vh;
+  max-height: 120vh;
   display: grid;
   grid-template-rows: 1fr 2fr 1fr;
 }
@@ -81,6 +85,10 @@ li {
   );
   padding: 1rem;
   overflow-y: scroll;
+}
+
+.main::-webkit-scrollbar {
+  display: none;
 }
 
 .link-btn-sub {
