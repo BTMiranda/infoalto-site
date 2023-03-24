@@ -492,6 +492,7 @@ i.headphones {
     position: fixed;
     bottom: 5.8rem;
     border-radius: 0.5rem;
+    background: #b21a708a;
   }
 
   .bar {
