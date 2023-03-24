@@ -27,12 +27,12 @@ main {
   padding: 3rem;
 }
 
-.menu-nav{
+.menu-nav {
   padding: 0rem 3rem 3rem 3rem;
-} 
+}
 
 .logo {
-  width: 18rem;  
+  width: 18rem;
 }
 
 a {
@@ -41,13 +41,13 @@ a {
   gap: 2rem;
 }
 
-.folder-container{
-  gap:4rem;  
+.folder-container {
+  gap: 4rem;
 }
 
-.icons-menu{
+.icons-menu {
   width: 2rem;
-  height: 2rem; 
+  height: 2rem;
 }
 
 ul {
@@ -83,7 +83,7 @@ li {
   overflow-y: scroll;
 }
 
-.link-btn-sub{
+.link-btn-sub {
   text-decoration: none;
   color: #fff;
   font-weight: 600;
@@ -92,7 +92,7 @@ li {
 }
 .btn-sub {
   width: 19rem;
-  height: 3.5rem; 
+  height: 3.5rem;
   border-radius: 10rem;
   outline: none;
   border: 0;
@@ -106,7 +106,7 @@ li {
   cursor: pointer;
   position: absolute;
   right: 1rem;
-  margin: 1rem 2rem 0 0;  
+  margin: 1rem 2rem 0 0;
 }
 
 .main::-webkit-scrollbar {
@@ -117,7 +117,7 @@ li {
   background: #fff;
   /* margin-left: -2rem;   */
   height: 2.9rem;
-  width: 2.9rem; 
+  width: 2.9rem;
   border-radius: 100%;
   display: flex;
   align-items: center;
@@ -165,7 +165,7 @@ li {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  padding-left: 0.2rem; 
+  padding-left: 0.2rem;
 }
 
 .btn-play i {
@@ -236,7 +236,6 @@ li {
   background-color: #fff;
   height: 0.5rem;
   border-radius: 5rem;
-  margin-bottom: 3rem;
   position: relative;
 }
 
@@ -260,7 +259,7 @@ li {
   gap: 3rem;
   justify-content: center;
   padding: 1rem 0;
-  margin-bottom: 0.5rem;   
+  margin-bottom: 0.5rem;
 }
 
 .play {
@@ -333,15 +332,96 @@ i.headphones {
   display: none;
 }
 
-.line-menu{
+.line-menu {
   margin: 2rem 0;
-  height: 0.1rem; 
+  height: 0.1rem;
   width: 100%;
   background-color: #a3a3a3;
 }
 
-.folder-menu{
+.folder-menu {
   color: #a3a3a3;
+}
+
+.playlists {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.play-list {
+  max-width: 24.8rem;
+  max-height: 30.3rem;
+  background: #2b2b2b;
+  border-radius: 0.6rem;
+  padding: 2rem;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.negocios {
+  width: 100%;
+  height: 80%;
+  border-radius: 0.6rem;
+}
+
+.gente-e-gestao {
+  width: 100%;
+  height: 80%;
+  border-radius: 0.6rem;
+}
+
+.produto {
+  width: 100%;
+  height: 80%;
+  border-radius: 0.6rem;
+}
+
+.playlist-play {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  background-color: #309bf3b0;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 1rem;
+  bottom: 18%;
+  display: none;
+  opacity: 0;
+}
+
+.play-list:hover .playlist-play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: op forwards 0.5s;
+}
+
+@keyframes op {
+  to {
+    opacity: initial;
+  }
+}
+
+.playlist-play i {
+  font-size: 3rem;
+}
+
+.play-list span {
+  text-transform: none;
+  font-weight: 500;
+  color: #fff;
+}
+
+.play-list p {
+  color: #a3a3a3;
+  font-weight: 400;
 }
 
 /*
@@ -355,7 +435,7 @@ i.headphones {
     display: block;
     position: relative;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
   }
 
   .logo {
@@ -387,6 +467,7 @@ i.headphones {
     position: absolute;
     bottom: 0;
     padding-bottom: 5rem;
+    z-index: 1;
   }
 
   .container {
@@ -488,5 +569,18 @@ i.headphones {
     display: block;
     font-size: 2rem;
     color: #fff;
+  }
+
+  .line-menu {
+    display: none;
+  }
+
+  .folder-container {
+    display: none;
+  }
+
+  .playlists {
+    flex-wrap: wrap;
+    padding-bottom: 10rem;
   }
 }
