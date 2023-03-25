@@ -439,11 +439,14 @@ i.headphones {
 */
 
 @media screen and (max-width: 768px) {
+  main {
+    height: 100vh;
+  }
+
   .content {
     display: block;
     position: relative;
     width: 100%;
-    min-height: 100%;
   }
 
   .logo {
@@ -495,10 +498,11 @@ i.headphones {
   }
 
   .player {
-    width: 100%;
+    width: 90%;
     height: 5rem;
-    position: fixed;
-    bottom: 5.8rem;
+    position: absolute;
+    bottom: -103rem;
+
     border-radius: 0.5rem;
     background: #b21a708a;
   }
@@ -507,7 +511,7 @@ i.headphones {
     display: block;
     position: absolute;
     bottom: 0;
-    left: 2rem;
+    left: 1.5rem;
     width: 100%;
   }
 
@@ -547,8 +551,8 @@ i.headphones {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-right: 5rem;
-    margin-bottom: 0.3rem;
+    width: max-content;
+    margin-left: 20rem;
   }
 
   .song-infos {
@@ -591,5 +595,11 @@ i.headphones {
   .playlists {
     flex-wrap: wrap;
     padding-bottom: 10rem;
+  }
+  .wrappre {
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
