@@ -500,8 +500,8 @@ i.headphones {
   .player {
     width: 90%;
     height: 5rem;
-    position: absolute;
-    bottom: -103rem;
+    position: fixed;
+    bottom: 5.5rem;
 
     border-radius: 0.5rem;
     background: #b21a708a;
