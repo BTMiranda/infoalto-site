@@ -432,6 +432,19 @@ i.headphones {
   font-weight: 400;
 }
 
+.social-icons {
+  display: flex;
+  margin-top: 3rem;
+}
+
+.social-icons a i {
+  font-size: 2rem;
+}
+
+.social-icons a {
+  text-decoration: none;
+}
+
 /*
 
   Responsividade
@@ -441,6 +454,10 @@ i.headphones {
 @media screen and (max-width: 768px) {
   main {
     height: 100vh;
+  }
+
+  .social-icons {
+    display: none;
   }
 
   .content {
