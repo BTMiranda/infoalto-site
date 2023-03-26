@@ -278,10 +278,12 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
 }
 
 .play i {
   font-size: 2rem;
+  color: #000;
 }
 
 .shuffle {
