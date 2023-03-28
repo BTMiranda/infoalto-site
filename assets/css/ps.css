@@ -94,11 +94,21 @@ li {
 .link-btn-sub {
   text-decoration: none;
   color: #fff;
+  /* width: 4rem;  */
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.link-btn-sub.playlink {
+  text-decoration: none;
+  color: #fff;
   width: 4rem; 
   font-weight: 600;
   font-size: 1.5rem;
   font-family: "Poppins", sans-serif;
 }
+
 .btn-sub {
   width: 19rem;
   height: 3.5rem;
@@ -108,7 +118,7 @@ li {
   background: #000;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   gap: 3rem;
   padding-left: 0.5rem;
   padding-right: 0.6rem;
@@ -159,7 +169,7 @@ li {
 .container h1 {
   color: #fff;
   font-weight: 700;
-  font-size: 3.8rem;   
+  font-size: 7rem;    
   line-height: 16.4rem;
 }
 
@@ -192,7 +202,7 @@ li {
   display: grid;
   place-content: center;
   place-items: center;
-  gap: 4rem;
+  gap: 2rem;
 }
 
 .c-infos h2 {
@@ -510,13 +520,13 @@ i.headphones {
   }
 
   .container {
-    margin-top: 10rem;
+    margin-top: 3rem; 
     padding-left: 0rem;
   }
 
   .container h1 {
     line-height: 8rem;
-    /* font-size: 5rem; */
+    font-size: 5rem;
   }
 
   .btn-play {
@@ -579,6 +589,21 @@ i.headphones {
     margin-left: 0.5rem; 
   }
 
+  .btn-sub {
+    position: unset;
+    margin: 2rem 0 0 0;
+  }
+  
+  .btn-sub-align{    
+    display: flex;
+    justify-content: center;
+  }
+  
+  .btn-center{
+    display: flex;
+    justify-content: center;
+  }
+
   .play i {
     color: #fff;
   }
@@ -592,7 +617,8 @@ i.headphones {
     align-items: center;
     justify-content: flex-end;
     width: max-content;
-    margin-left: 20rem;
+    margin-left: 75%; 
+    right: -20rem;
     gap: 1rem;
     font-size: 1rem; 
   }
@@ -613,6 +639,15 @@ i.headphones {
 
   .song-name i {
     display: none;
+  }
+
+  .song-name {
+    font-weight: 500;
+    font-size: 1.2rem;  
+    color: #fff;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
   }
 
   i.heart {
