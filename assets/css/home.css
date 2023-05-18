@@ -915,23 +915,6 @@ footer {
   animation: wiggle 2.5s infinite;
 }
 
-.popup {
-  position: fixed;
-  width: 28.3rem;
-  min-height: 33.6rem;
-  height: 6rem;
-  bottom: 10rem;
-  right: 5.3rem;
-  z-index: 1000;
-  background-color: #ffffff;
-  border-top-right-radius: 1rem;
-  border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem;
-  -webkit-box-shadow: 1rem 1rem 3.4rem -1.3rem rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 1rem 1rem 3.4rem -1.3rem rgba(0, 0, 0, 0.75);
-  box-shadow: 1rem 1rem 3.4rem -1.3rem rgba(0, 0, 0, 0.75);
-}
-
 /* Animações */
 
 @keyframes wiggle {
@@ -1062,6 +1045,12 @@ footer {
     max-width: 51.6rem;
     max-height: 22rem;
     padding-bottom: 2rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+
+  .card:hover{
+    transform: scale(1.1);
   }
 
   .cardContent p {
