@@ -39,31 +39,9 @@
     <title>InfoAlto - Empresa Júnior - InfoAlto</title>
   </head>
   <body onresize="change()">
-    <div onclick="openPopUP()" class="float">
-      <i class="fa-brands fa-whatsapp my-float"></i>
+    <div class="float">
+      <a href="https://api.whatsapp.com/send?phone=5534998430039" target="_blank" class="fa-brands fa-whatsapp my-float"></a>
     </div>
-    <div style="display: none" id="popup" class="popup">
-      <div class="popup-content">
-        <form id="form">
-          <label for="name">Nome</label>
-          <input type="text" id="nome" name="nome" />
-          <label for="telefone">Telefone</label>
-          <input type="text" id="telefone" name="telefone" />
-          <label for="mensagem">Mensagem</label>
-          <textarea
-            id="mensagem"
-            name="mensagem"
-            style="height: 131px; width: 261px"
-          ></textarea>
-          <div class="btn-form-container">
-            <button type="submit" class="btn-form-popup">
-              Enviar Mensagem
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
-
     <header id="top" class="header">
       <nav class="navigation">
         <a href="index.html">
