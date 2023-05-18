@@ -932,58 +932,6 @@ footer {
   box-shadow: 1rem 1rem 3.4rem -1.3rem rgba(0, 0, 0, 0.75);
 }
 
-.popup-content {
-  padding: 1rem;
-}
-
-.popup-content form {
-  display: grid;
-  gap: 0.5rem;
-}
-
-.popup-content form input {
-  outline: none;
-  padding: 0.7rem;
-  border-radius: 0.3rem;
-  border: var(--bg-color) 1px solid;
-  width: 100%;
-  height: 100%;
-  font-size: 1.3rem;
-}
-
-.popup-content form textarea {
-  outline: none;
-  padding: 0.5rem;
-  border-radius: 0.3rem;
-  border: var(--bg-color) 1px solid;
-}
-
-.popup-content form label {
-  font-size: 1.4rem;
-  font-weight: 500;
-}
-
-.btn-form-container {
-  margin: auto;
-}
-
-.btn-form-popup {
-  padding: 0.4rem;
-  outline: none;
-  border: 0;
-  background: var(--bg-color);
-  border-radius: 0.7rem;
-  width: 15rem;
-  height: 4rem;
-  font-weight: 800;
-  font-size: 1.2rem;
-  color: var(--text-color);
-  -webkit-box-shadow: 1rem 1rem 3.4rem -1.3rem rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 1rem 1rem 3.4rem -1.3rem rgba(0, 0, 0, 0.75);
-  box-shadow: 1rem 1rem 3.4rem -1.3rem rgba(0, 0, 0, 0.75);
-  cursor: pointer;
-}
-
 /* Animações */
 
 @keyframes wiggle {
