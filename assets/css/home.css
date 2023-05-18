@@ -910,15 +910,78 @@ footer {
   cursor: pointer;
 }
 
-.float a{
-  color: #ffffff;
-  text-decoration: none;
-}
-
-
 .my-float {
   margin-top: 1.6rem;
   animation: wiggle 2.5s infinite;
+}
+
+.popup {
+  position: fixed;
+  width: 28.3rem;
+  min-height: 33.6rem;
+  height: 6rem;
+  bottom: 10rem;
+  right: 5.3rem;
+  z-index: 1000;
+  background-color: #ffffff;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  -webkit-box-shadow: 1rem 1rem 3.4rem -1.3rem rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1rem 1rem 3.4rem -1.3rem rgba(0, 0, 0, 0.75);
+  box-shadow: 1rem 1rem 3.4rem -1.3rem rgba(0, 0, 0, 0.75);
+}
+
+.popup-content {
+  padding: 1rem;
+}
+
+.popup-content form {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.popup-content form input {
+  outline: none;
+  padding: 0.7rem;
+  border-radius: 0.3rem;
+  border: var(--bg-color) 1px solid;
+  width: 100%;
+  height: 100%;
+  font-size: 1.3rem;
+}
+
+.popup-content form textarea {
+  outline: none;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  border: var(--bg-color) 1px solid;
+}
+
+.popup-content form label {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.btn-form-container {
+  margin: auto;
+}
+
+.btn-form-popup {
+  padding: 0.4rem;
+  outline: none;
+  border: 0;
+  background: var(--bg-color);
+  border-radius: 0.7rem;
+  width: 15rem;
+  height: 4rem;
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: var(--text-color);
+  -webkit-box-shadow: 1rem 1rem 3.4rem -1.3rem rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1rem 1rem 3.4rem -1.3rem rgba(0, 0, 0, 0.75);
+  box-shadow: 1rem 1rem 3.4rem -1.3rem rgba(0, 0, 0, 0.75);
+  cursor: pointer;
 }
 
 /* Animações */
