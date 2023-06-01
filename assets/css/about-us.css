@@ -124,16 +124,46 @@ menu a {
 
 .row-1 {
   width: 19rem;
-  height: 0.3rem;
-  background-color: #114977;
+  height: 0.5rem;
+  background-color: #d9dce0;
   border-radius: 2rem;
 }
 
 .row-2 {
   width: 9rem;
-  height: 0.3rem;
-  background-color: #007ba5;
+  height: 0.5rem;
+  background-color: #d5dadd;
   border-radius: 2rem;
+}
+
+.page-header {
+  width: 100%;
+  height: 65rem;
+}
+
+.team-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  background-image: url(/assets/images/team/team2.JPG);
+  background-position-y:90%;
+}
+
+.overlay-header {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #081330 0%, #414141 100%);;
+  position: absolute;
+  opacity: 0.35;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .title-about-us {
@@ -142,15 +172,22 @@ menu a {
   place-items: center;
   place-content: center;
   gap: 1rem;
+  /*margin-bottom: 100px;*/
+  z-index: 2;
+  transition: scale 1s ease;
+}
+
+.title-about-us:hover {
+  scale: 1.3;
 }
 
 .title-about-us h1 {
-  color: var(--bg-color);
+  color:#ffffff;
   text-align: center;
-  font-size: 4rem;
-  font-weight: 600;
-  font-family: var(--font-titles);
-  letter-spacing: 3px;
+  font-size: 4.5rem;
+  font-weight: 650;
+  font-family: var(--font-global);
+  letter-spacing: 4px;
 }
 
 .content-about-us {
@@ -162,7 +199,7 @@ menu a {
 
 .content-about-us h2 {
   font-size: 3rem;
-  font-family: var(--font-titles);
+  font-family: var(--bg-color);
   font-weight: 600;
   color: #383838;
 }
@@ -210,14 +247,102 @@ menu a {
   font-weight: 500;
 }
 
-.card {
-  width: 100%;
+.cards {
+  min-width: 100%;
   height: 50rem;
   background-color: #00536e;
   clip-path: polygon(9% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
+.mvv {
+  width:100%;
+  height:100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 22%;
+  min-width: 230px;
+  height: 74%;
+  margin-left: 6rem;
+  margin-right: 2rem;
+}
+
+.card-content {
+  width:100%;
+  height:100%;
+  background-color: #70a2e0;
+  border-radius: 25px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.card-content .back {
+  padding:3rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #70a2e0;
+  /*background: rgb(63,121,193);
+  background: linear-gradient(90deg, rgba(63,121,193,1) 39%, rgba(5,44,170,1) 100%);*/
+  transform: rotateY(180deg);
+}
+
+.card-content .front {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  background-color: #70a2e0;
+  color: white;
+  /*background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 61%, rgba(46,70,189,1) 100%);*/
+}
+
+.card-content .front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 25px;
+  box-shadow: 10px 5px 5px 2px #081330;
+}
+
+.card-content .front span {
+  font-size: 5rem;
+  font-family: Oswald;
+  letter-spacing: 0.3rem;
+}
+
+.card-content .back p, li{
+  text-align: center;
+  font-size: 1.75rem;
+  color: white;
+}
+
+.card-content .back li{
+  text-align: start;
+  font-size: 1.75rem;
+}
+
+.card:hover .card-content {
+  transform: rotateY(180deg);
+  /*box-shadow: 2px 5px 5px 10px #081330;*/
+}
+
 .meet-team {
+  width: 100%;
   margin-top: 1rem;
   display: grid;
   place-content: center;
@@ -345,13 +470,16 @@ footer {
 
 .footer-menu {
   list-style: none;
-  display: grid;
-  gap: 1.4rem;
+  /*display: grid;*/
+  gap: 1rem;
+  display: flex;
+  flex-flow:column wrap;
+  align-items: flex-start;
   text-align: center;
 }
 
 .footer-menu-active {
-  color: var(--bg-color);
+  /*color: var(--bg-color);*/
 }
 
 .footer-menu li {
@@ -361,20 +489,21 @@ footer {
 }
 
 .footer-menu li.footer-menu-active {
-  color: var(--bg-color);
+  /*color: var(--bg-color);*/
 }
 
 .footer-contact p {
   font-size: 1.3rem;
   color: #ffffff;
   width: 25rem;
-  margin-top: 1rem;
+  /*margin-top: 1rem;*/
 }
 
 .footer-contact h4 {
   font-weight: 600;
   color: var(--text-color);
   font-size: 1.8rem;
+  margin-bottom: 1em;
 }
 
 .footer-content {
