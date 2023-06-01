@@ -28,6 +28,28 @@ body {
   position: relative;
 }
 
+.subheader {
+  background-color: #477295;
+  padding: 30px;
+}
+
+.subheader h1{
+  color: white;
+  text-align: center;
+  font-size: 2.5em;
+  font-family: var(--font-titles);
+
+}
+.subheader .rows{
+  margin-top: 7px;
+}
+.subheader .row-1{
+  background-color: white;
+}
+
+.subheader .row-2{
+  background-color: white;
+}
 menu {
   display: none;
   animation: opacity 1s forwards;
