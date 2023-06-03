@@ -54,10 +54,10 @@
         ></i>
         <menu id="items">
           <ul>
-            <a href="index.html"><li class="onActive">Home</li></a>
-            <a href="#"><li>Quem Somos</li></a>
+            <a href="index.html"><li>Home</li></a>
+            <a href="quem-somos.html"><li>Quem Somos</li></a>
             <a href="#services"><li>Serviços</li></a>
-            <a href="portfolio.html"><li>Portfólio</li></a>
+            <a href="portfolio.html"><li class="onActive">Portfólio</li></a>
             <li>Blog</li>
             <li>Contato</li>
           </ul>
@@ -90,6 +90,7 @@
     </header>
     <main class="background-portfolio">
       <div class="overlay-portfolio"></div>
+
       <div class="seletor">
         <ul class="opcoes-seletor">
           <li class="opcoes-item">Aplicativos</li>
@@ -99,15 +100,26 @@
           <li class="opcoes-item">Sites</li>
         </ul>
       </div>
+
       <h1 class="titulo">Sistemas Web</h1>
+
       <div class="conteudo">
-        <div class="container">
-          <img src="assets/images/portfolio/menutri.png" alt="">
+        <div class="wrapper">
+          <a href="https://menutriconsultoriajr.com.br/" target="_blank">
+            <div class="container">
+              <img src="assets/images/portfolio/menutri.png" alt="">
+            </div>
+            <div class="overlay">
+              <h1>Veja o produto final!</h1>
+            </div>
+          </a>
         </div>
-        <div>
-          <h2>Me Nutri</h2>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis eum ab pariatur, aliquam distinctio facere. Fugit, possimus laboriosam! Non quibusdam saepe minima blanditiis. Beatae dolorem tempore, ut dolorum veritatis quos?</p>
+
+        <div class="sobre-projeto">
+          <h2 class="subtitulo">Me Nutri</h2>
+          <p class="descricao">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis eum ab pariatur, aliquam distinctio facere. Fugit, possimus laboriosam! Non quibusdam saepe minima blanditiis. Beatae dolorem tempore, ut dolorum veritatis quos?</p>
         </div>
+
       </div>
 
     </main>
@@ -154,19 +166,19 @@
 
         <!-- Menu -->
         <div class="footer-menu">
-          <li class="footer-menu-active">
-            <i class="fa-sharp fa-solid fa-arrow-right footer-menu-active"></i>
+          <li>
+            <i class="fa-sharp fa-solid fa-arrow-right"></i>
             Home
           </li>
           <li>
             <i class="fa-sharp fa-solid fa-arrow-right"></i>
             Quem somos
           </li>
-          <li>
+          <li >
             <i class="fa-sharp fa-solid fa-arrow-right"></i>
             Serviços
           </li>
-          <li>
+          <li class="footer-menu-active">
             <i class="fa-sharp fa-solid fa-arrow-right"></i>
             Portfólio
           </li>

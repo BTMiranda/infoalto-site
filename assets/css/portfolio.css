@@ -56,6 +56,7 @@ body {
   opacity: 65%;
   margin-inline: 30%;
   border-radius: 0 0 30px 30px ;
+  margin-bottom: 50px;
 }
 
 .seletor .opcoes-seletor{
@@ -110,21 +111,82 @@ body {
   justify-content: left;
   padding: 5vh;
   padding-top: 0;
+  margin-top: 50px;
 }
 
-.conteudo .container img{
+.conteudo .wrapper img{
   max-height: 590px;
   max-width: 673px;
+  border-radius: 5px;
+  
+}
+.portfolio .portfolio-content .wrapper {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  place-content: center;
+  place-items: center;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+.wrapper a {
+  position: relative;
+  overflow: hidden;
+}
+
+.wrapper a:hover .overlay {
+  opacity: 0.8;
+}
+
+.wrapper a img {
+  border-radius: 10px;
+  animation: opacity 3s forwards;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.wrapper a .overlay {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #111;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  border-radius: 0.3rem;
+  opacity: 0;
+  transition: 0.5s ease;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  justify-content: space-around;
+}
+
+.sobre-projeto{
+  margin-left: 20px;
+  color: #ffffff;
+}
+
+.sobre-projeto .subtitulo{
+  font-size: 25px;
+  text-shadow: 0 3px #00000075;
+  margin-bottom: 50px;
+}
+.sobre-projeto .descricao{
+  font-size: 20px;
 }
 
 .titulo{
   color: #ffffff;
-  
+
   font-size: 30px;
-  padding: 5vh;
-  padding-bottom: 35px;
+  display: inline;
+  margin: 50px;
   text-shadow: 0 3px #00000075;
-  
 }
 
 menu {
@@ -450,7 +512,7 @@ footer {
   .navigation ul li.onActive::before {
     content: "";
     position: absolute;
-    width: 4.7rem;
+    width: 7.2rem;
     height: 0.3rem;
     background-color: var(--text-color);
     bottom: 0;
