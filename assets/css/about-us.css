@@ -666,22 +666,21 @@ footer {
   cursor: pointer;
 }
 
-.footer-menu-active:hover{
-  color: var(--bg-color);
-}
-
-
 .footer-menu li {
   color: var(--text-color);
   font-size: 1.6rem;
   font-weight: 500;
 }
 
-/*
-.footer-menu li.footer-menu-active {
+.footer-menu-active-link {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-menu-active-link:hover {
+  text-decoration: none;
   color: var(--bg-color);
 }
-*/
 
 .footer-contact p {
   font-size: 1.3rem;

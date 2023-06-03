@@ -702,7 +702,7 @@ svg {
   color: #ffffff;
   font-weight: bold;
   opacity: 0.5;
-  font-size: 1.8rem;
+  font-size: 2rem;
   transition: 0.6s ease;
   border-radius: 0 0.3rem 0.3rem 0;
 }
@@ -719,9 +719,9 @@ svg {
 
 .prev:hover,
 .next:hover {
-  color: #f2f2f2;
-  font-size: 2.2rem;
+  color:#ffffff;
   opacity: 1;
+  scale: 1.8;
 }
 
 .dot {
@@ -774,11 +774,20 @@ svg {
   font-size: 1.5rem;
 }
 /* Depoimentos */
+.text-div-depositions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .textdepositions {
   line-height: 2rem;
   color: #ffffff;
   font-weight: 300;
+  text-align: center;
+  width: 55rem;
 }
+
 .profdepositions {
   color: #a0a0a0;
   margin-top: 0.2rem;
@@ -831,22 +840,27 @@ footer {
 
 .footer-menu {
   list-style: none;
-  display: grid;
-  gap: 1.4rem;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1rem;
   text-align: center;
-}
-
-.footer-menu-active {
-  color: var(--bg-color);
+  align-items: flex-start;
 }
 
 .footer-menu li {
   color: var(--text-color);
   font-size: 1.6rem;
   font-weight: 500;
+  cursor: pointer;
 }
 
-.footer-menu li.footer-menu-active {
+.footer-menu-active-link {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-menu-active-link:hover {
+  text-decoration: none;
   color: var(--bg-color);
 }
 
@@ -854,13 +868,13 @@ footer {
   font-size: 1.3rem;
   color: #ffffff;
   width: 25rem;
-  margin-top: 1rem;
 }
 
 .footer-contact h4 {
   font-weight: 600;
   color: var(--text-color);
   font-size: 1.8rem;
+  margin-bottom: 1em;
 }
 
 .footer-content {
