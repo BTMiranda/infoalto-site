@@ -182,140 +182,12 @@ menu a {
   bottom: 0;
 }
 
-
-.conheca-nosso-time {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 5rem;
-}
-
-.conheca-nosso-time .titulo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1.2rem;
-}
-
-.conheca-nosso-time .titulo h1 {
-  font-weight: 300;
-  font-size: 4rem;
-  font-family: var(--font-titles);
-  letter-spacing: 3px;
-}
-
-.apresentacao-time {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  margin: 8rem 0 0rem 0;
-}
-
-.carrossel {
-  --departamento-atual: 0;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-}
-
-.carrossel-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 0;
-  margin: 0.5rem;
-  cursor: pointer;
-  z-index: 1;
-  border: none;
-  background-color: transparent;
-}
-
-.button-next {
-  right: 0;
-}
-
-.departamentos {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  transition: transform 0.5s;
-  transform: translateX(calc(-100% * var(--departamento-atual)));
-}
-
-.departamento {
-  flex: 0 0 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  /*background-color: #00536e;*/
-}
-
-.departamento h3 {
-  letter-spacing: 3px;
-  margin-top: 2rem;
-  font-size: 3rem;
-  font-weight: 500;
-  font-family: var(--font-titles);
-  color:#081330;
-  text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.75);
-}
-
-.foto-departamento{
-  width: 80%;
-  height: 90%;
-  margin: 3rem  5rem 5rem 5rem;
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-}
-
-.foto-presidencia {
-  background-image: url("/assets/images/foto-departamentos/presidencia.jpg");
-}
-
-.foto-gente-gestao {
-  background-image: url("/assets/images/foto-departamentos/gente-gestao.jpeg");
-  background-position-y: center;
-  background-position-x: 70%;
-}
-
-.foto-negocios {
-  background-image: url("/assets/images/foto-departamentos/negocios.jpeg");
-  background-position-y: 30%;
-  background-position-x: 60%;
-}
-
-.foto-produto {
-  background-image: url("/assets/images/foto-departamentos/produto.jpeg");
-  background-position-y: 38%;
-  background-position-x: center;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 .title-about-us {
   margin-top: 1rem;
   display: grid;
   place-items: center;
   place-content: center;
   gap: 1rem;
-  /*margin-bottom: 100px;*/
   z-index: 2;
   transition: scale 1s ease;
 }
@@ -327,13 +199,10 @@ menu a {
 .title-about-us h1 {
   color:#ffffff;
   text-align: center;
-  /*font-size: 4.5rem;
-  font-weight: 650;*/
   font-weight: 300;
   font-size: 5rem;
   font-family: var(--font-titles);
   letter-spacing: 4px;
-  /*text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.75);*/
   cursor:default;
 }
 
@@ -399,38 +268,16 @@ menu a {
 
 .nossa-empresa {
   margin: 0 0 3rem 0;
+  text-align: justify;
 }
 
-.about-us-infos {
-  padding: 1rem;
-  border-top: 0.1rem solid #d3d3d3;
-  border-bottom: 0.1rem solid #d3d3d3;
-  display: flex;
-  align-items: center;
-  gap: 7rem;
-}
-
-.about-us-infos-circle {
-  flex-basis: 5rem;
-  height: 5rem;
-  background: #1149777c;
-  border-radius: 100%;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.about-us-infos span {
-  font-family: var(--font-global);
-  font-weight: 500;
+.nossa-empresa p {
+  font-size: 1.75rem;
 }
 
 .cards {
   min-width: 100%;
   height: 50rem;
-  background-color: #00536e;
-  clip-path: polygon(9% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 .mvv {
@@ -446,14 +293,14 @@ menu a {
   width: 22%;
   min-width: 250px;
   height: 74%;
-  margin-left: 6rem;
-  margin-right: 2rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 .card-content {
   width:100%;
   height:100%;
-  background-color: #70a2e0;
+  background-color: #007ba5;
   border-radius: 25px;
   position: relative;
   transform-style: preserve-3d;
@@ -468,9 +315,7 @@ menu a {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  background-color: #70a2e0;
-  /*background: rgb(63,121,193);
-  background: linear-gradient(90deg, rgba(63,121,193,1) 39%, rgba(5,44,170,1) 100%);*/
+  background-color: #007ba5;
   transform: rotateY(180deg);
   cursor: default;
 }
@@ -483,11 +328,9 @@ menu a {
   justify-content: center;
   align-items: center;
   gap: 5rem;
-  background-color: #70a2e0;
+  background-color: #007ba5;
   color: white;
   cursor: default;
-  /*background: rgb(63,94,251);
-  background: radial-gradient(circle, rgba(63,94,251,1) 61%, rgba(46,70,189,1) 100%);*/
 }
 
 .card-content .front, .back {
@@ -497,21 +340,20 @@ menu a {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 25px;
-  box-shadow: 10px 5px 5px 2px #081330;
+  box-shadow: 10px 5px 20px -3px #081330;
 }
 
 .card-content .front span {
-  font-size: 5rem;
-  font-family: Oswald;
+  font-size: 4.5rem;
+  font-family: var(--font-global);
   letter-spacing: 0.3rem;
-  text-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.75);
+
 }
 
 .card-content .back p, li{
   text-align: center;
   font-size: 1.75rem;
   color: white;
-  text-shadow: 0.04rem 0.04rem rgba(0, 0, 0, 0.75);
 }
 
 .card-content .back li{
@@ -521,105 +363,121 @@ menu a {
 
 .card:hover .card-content {
   transform: rotateY(180deg);
-  /*box-shadow: 2px 5px 5px 10px #081330;*/
 }
 
-.meet-team {
+.conheca-nosso-time {
   width: 100%;
-  margin-top: 1rem;
-  display: grid;
-  place-content: center;
-  place-items: center;
-  gap: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5rem;
 }
 
-.meet-team h1 {
-  color: var(--bg-color);
-  text-align: center;
+.conheca-nosso-time .titulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.conheca-nosso-time .titulo h1 {
+  font-weight: 300;
   font-size: 4rem;
-  font-weight: 600;
   font-family: var(--font-titles);
+  color: var(--bg-color);
   letter-spacing: 3px;
 }
 
-.president {
-  min-height: 50vh;
-  margin-top: 1rem;
-}
-
-.president .content {
-  display: grid;
-  place-content: center;
-  place-items: center;
-  gap: 2rem;
-}
-
-.president .content h2 {
-  font-family: var(--font-titles);
-  color: #383838;
-}
-
-.president-photo {
+.apresentacao-time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 50rem;
-  border-radius: 0.6rem;
-  -webkit-box-shadow: 1rem 1rem 3.4rem -1.3rem rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 1rem 1rem 3.4rem -1.3rem rgba(0, 0, 0, 0.75);
-  box-shadow: 1rem 1rem 3.4rem -1.3rem rgba(0, 0, 0, 0.75);
-  opacity: 0;
-  animation: opacity 3s forwards ease-in-out;
-  position: relative;
+  height: 100vh;
+  margin: 5rem 0 0rem 0;
 }
 
-.president .content .wrapper {
+.carrossel {
+  --departamento-atual: 0;
+  width: 100%;
+  height: 100%;
   position: relative;
   overflow: hidden;
 }
 
-.president .content .wrapper .overlay:hover {
-  opacity: 0.8;
-}
-
-.president .content .wrapper .overlay h2 {
-  color: var(--text-color);
-}
-
-.president .content .wrapper .overlay a {
-  padding: 1rem;
-  background-color: var(--bg-color);
-  width: 5rem;
-  height: 5rem;
-  border-radius: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-}
-
-.president .content .wrapper .overlay a > i {
-  font-size: 3rem;
-}
-
-.president .content .wrapper .overlay {
+.carrossel-button {
   position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: #111;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+  margin: 0.5rem;
+  cursor: pointer;
   z-index: 1;
-  border-radius: 0.3rem;
-  opacity: 0;
-  transition: 0.5s ease;
-  color: #fff;
+  border: none;
+  background-color: transparent;
+}
+
+.button-next {
+  right: 0;
+}
+
+.departamentos {
   display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+  transition: transform 0.5s;
+  transform: translateX(calc(-100% * var(--departamento-atual)));
+}
+
+.departamento {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.departamento h3 {
+  letter-spacing: 3px;
+  margin-top: 2rem;
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: var(--font-titles);
+  color: var(--bg-color);
+  text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.75);
+}
+
+.foto-departamento{
+  width: 80%;
+  height: 90%;
+  margin: 3rem  5rem 5rem 5rem;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.foto-presidencia {
+  background-image: url("/assets/images/foto-departamentos/presidencia.jpg");
+}
+
+.foto-gente-gestao {
+  background-image: url("/assets/images/foto-departamentos/gente-gestao.jpeg");
+  background-position-y: center;
+  background-position-x: 70%;
+}
+
+.foto-negocios {
+  background-image: url("/assets/images/foto-departamentos/negocios.jpeg");
+  background-position-y: 30%;
+  background-position-x: 60%;
+}
+
+.foto-produto {
+  background-image: url("/assets/images/foto-departamentos/produto.jpeg");
+  background-position-y: 38%;
+  background-position-x: center;
 }
 
 footer {
@@ -628,7 +486,6 @@ footer {
 }
 
 .footer-contact-sub {
-  /* position: absolute; */
   align-items: center;
   display: flex;
   flex-wrap: wrap;
@@ -653,7 +510,6 @@ footer {
 
 .footer-menu {
   list-style: none;
-  /*display: grid;*/
   gap: 1rem;
   display: flex;
   flex-flow:column wrap;
@@ -686,7 +542,6 @@ footer {
   font-size: 1.3rem;
   color: #ffffff;
   width: 25rem;
-  /*margin-top: 1rem;*/
 }
 
 .footer-contact h4 {
@@ -710,7 +565,6 @@ footer {
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  /* padding: 2rem;   */
 }
 
 .footer-developed p {
@@ -723,6 +577,54 @@ footer {
   width: 90%;
   height: 0.1rem;
   margin: 1rem 1rem;
+}
+
+/* Botão do WhatsApp */
+
+.float {
+  position: fixed;
+  width: 6rem;
+  height: 6rem;
+  bottom: 4rem;
+  right: 1rem;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 5rem;
+  text-align: center;
+  font-size: 3rem;
+  box-shadow: 0.2rem 0.2rem 0.3rem #999;
+  z-index: 100;
+  animation: wiggle 2.5s infinite;
+  cursor: pointer;
+}
+
+.my-float {
+  margin-top: 1.6rem;
+  animation: wiggle 2.5s infinite;
+}
+
+/* Animações */
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  80% {
+    transform: rotate(0deg);
+  }
+
+  85% {
+    transform: rotate(5deg);
+  }
+
+  95% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 @media screen and (max-width: 1100px) {
