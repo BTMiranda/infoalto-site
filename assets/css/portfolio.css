@@ -107,7 +107,6 @@ body {
 
 .background-portfolio{
   background: url("../images/overlay/image4.jpg");
-  height: 100vh;
   width: 100%;
   background-attachment: fixed;
   background-position: right;
@@ -729,4 +728,66 @@ footer {
     font-weight: 400;
     color: var(--text-color);
   }
+}
+
+
+
+/* Carrossel */
+.portifolio-sites {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  margin: 5rem 0 0rem 0;
+}
+
+.carrossel {
+  --departamento-atual: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.carrossel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+  margin: 0.5rem;
+  cursor: pointer;
+  z-index: 1;
+  border: none;
+  background-color: transparent;
+}
+
+.button-next {
+  right: 0;
+}
+
+.sites {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  transition: transform 0.5s;
+  transform: translateX(calc(-100% * var(--departamento-atual)));
+}
+
+.site {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.site h3 {
+  letter-spacing: 3px;
+  margin-top: 2rem;
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: var(--font-titles);
+  color: var(--bg-color);
+  text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.75);
 }
