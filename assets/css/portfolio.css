@@ -39,6 +39,7 @@ body {
   font-family: var(--font-titles);
 
 }
+
 .subheader .rows{
   margin-top: 7px;
 }
@@ -52,8 +53,6 @@ body {
 
 .seletor{
   padding: 17px;
-  background-color: #000000;
-  opacity: 65%;
   margin-inline: 30%;
   border-radius: 0 0 30px 30px ;
   margin-bottom: 50px;
@@ -74,6 +73,26 @@ body {
   justify-content: center;
   margin-right: 45px;
 }
+.portfolio {
+  margin-top: 6rem;
+}
+
+.portfolio-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.portfolio .portfolio-content h1 {
+  color: var(--bg-color);
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 600;
+  font-family: var(--font-titles);
+  letter-spacing: 3px;
+}
 
 .opcoes-seletor .opcoes-item:hover{
   transform: scale(1.2);
@@ -88,13 +107,12 @@ body {
 
 .background-portfolio{
   background: url("../images/overlay/image4.jpg");
-  height: 100vh;
   width: 100%;
   background-attachment: fixed;
   background-position: right;
   background-size: cover;
   position: relative;
-  z-index: 0;
+  z-index: 1;
 }
 
 .overlay-portfolio{
@@ -114,12 +132,37 @@ body {
   margin-top: 50px;
 }
 
-.conteudo .wrapper img{
+.conteudo .container img{
   max-height: 590px;
   max-width: 673px;
   border-radius: 5px;
   
 }
+.portfolio .portfolio-content .container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  place-content: center;
+  place-items: center;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+.container a {
+  position: relative;
+  overflow: hidden;
+}
+
+.container a:hover .overlay {
+  opacity: 0.8;
+}
+
+.container a img {
+  border-radius: 10px;
+  animation: opacity 3s forwards;
+  opacity: 0;
+  overflow: hidden;
+}
+
 .portfolio .portfolio-content .wrapper {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
@@ -129,23 +172,47 @@ body {
   padding: 2rem;
 }
 
-.wrapper a {
+.portfolio .portfolio-content .wrapper a {
   position: relative;
   overflow: hidden;
 }
 
-.wrapper a:hover .overlay {
+.portfolio .portfolio-content .wrapper a:hover .overlay {
   opacity: 0.8;
 }
 
-.wrapper a img {
-  border-radius: 10px;
+.portfolio .portfolio-content .wrapper a img {
+  width: 100%;
+  height: 25.9rem;
+  border-radius: 0.3rem;
   animation: opacity 3s forwards;
   opacity: 0;
   overflow: hidden;
+  object-fit: cover;
 }
 
-.wrapper a .overlay {
+.portfolio .portfolio-content .wrapper a .overlay {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #111;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  border-radius: 0.3rem;
+  opacity: 0;
+  transition: 0.5s ease;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  justify-content: space-around;
+}
+
+.container a .overlay {
   position: absolute;
   content: "";
   width: 100%;
@@ -184,7 +251,6 @@ body {
   color: #ffffff;
 
   font-size: 30px;
-  display: inline;
   margin: 50px;
   text-shadow: 0 3px #00000075;
 }
@@ -662,4 +728,66 @@ footer {
     font-weight: 400;
     color: var(--text-color);
   }
+}
+
+
+
+/* Carrossel */
+.portifolio-sites {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  margin: 5rem 0 0rem 0;
+}
+
+.carrossel {
+  --departamento-atual: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.carrossel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+  margin: 0.5rem;
+  cursor: pointer;
+  z-index: 1;
+  border: none;
+  background-color: transparent;
+}
+
+.button-next {
+  right: 0;
+}
+
+.sites {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  transition: transform 0.5s;
+  transform: translateX(calc(-100% * var(--departamento-atual)));
+}
+
+.site {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.site h3 {
+  letter-spacing: 3px;
+  margin-top: 2rem;
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: var(--font-titles);
+  color: var(--bg-color);
+  text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.75);
 }
