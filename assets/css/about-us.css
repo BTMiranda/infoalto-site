@@ -417,6 +417,13 @@ menu a {
   z-index: 1;
   border: none;
   background-color: transparent;
+  font-size: 5rem;
+  opacity: 0.75;
+  transition: 1s;
+}
+
+.carrossel-button:hover {
+  opacity: 1;
   font-size: 6rem;
 }
 
