@@ -117,11 +117,13 @@ body {
   margin: 50px 3% 0 3%;
 }
 
+
+
 .conteudo .container img{
   max-height: 590px;
   max-width: 673px;
+  min-height: 400px;
   border-radius: 5px;
-  
 }
 
 .container a {
