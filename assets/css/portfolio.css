@@ -670,6 +670,7 @@ footer {
   position: relative;
   overflow: hidden;
   margin-bottom: 5rem;
+}
 
 .carrossel-button {
   position: absolute;
@@ -711,4 +712,35 @@ footer {
   font-family: var(--font-titles);
   color: var(--bg-color);
   text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.75);
+}
+
+.title-site {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.title-site h1 {
+  font-weight: 300;
+  font-size: 4rem;
+  font-family: var(--font-titles);
+  color: white;
+  text-shadow: 0 3px #00000075;
+  letter-spacing: 3px;
+}
+
+.row-1 {
+  width: 19rem;
+  height: 0.3rem;
+  background-color: white;
+  border-radius: 2rem;
+}
+
+.row-2 {
+  width: 9rem;
+  height: 0.3rem;
+  background-color: white;
+  border-radius: 2rem;
 }
