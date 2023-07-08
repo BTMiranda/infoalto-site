@@ -164,8 +164,10 @@ body {
 }
 
 .sobre-projeto{
+  padding-top: 8em;
   margin-left: 20px;
   color: #ffffff;
+  text-align: center;
 }
 
 .sobre-projeto .subtitulo{
@@ -656,6 +658,7 @@ footer {
 
 /* Carrossel */
 .portifolio-sites {
+  padding-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
