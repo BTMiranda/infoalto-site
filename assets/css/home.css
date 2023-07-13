@@ -160,7 +160,7 @@ menu a {
 .about-us {
   height: auto;
   width: 100%;
-  background: url("../images/overlay/image3.jpg");
+  background: url("../images/logos/icone-infoalto.png"); 
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
@@ -169,12 +169,12 @@ menu a {
   z-index: 0;
 }
 
-.overlay-about-us {
+.overlay-about-us {  
   background-color: #ffffff;
   width: 100%;
   height: 100%;
   position: absolute;
-  opacity: 0.8;
+  opacity: 0.9;  
   z-index: 1;
 }
 
@@ -1069,6 +1069,12 @@ footer {
     display: grid;
     grid-template-columns: 5fr 4fr;
     align-items: center;
+  }
+
+  img{
+    -webkit-box-shadow: 1rem 1rem 3.4rem -1.3rem rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1rem 1rem 3.4rem -1.3rem rgba(0, 0, 0, 0.75);
+    box-shadow: 1rem 1rem 3.4rem -1.3rem rgba(0, 0, 0, 0.75);
   }
 
   .cards {
