@@ -566,6 +566,7 @@ menu a {
 .portfolio .portfolio-content .wrapper a {
   position: relative;
   overflow: hidden;
+  box-shadow: 1rem 1rem 3.4rem -1.3rem rgba(0, 0, 0, 0.75);
 }
 
 .portfolio .portfolio-content .wrapper a:hover .overlay {
@@ -580,6 +581,7 @@ menu a {
   opacity: 0;
   overflow: hidden;
   object-fit: cover;
+  box-shadow: 1rem 1rem 3.4rem -1.3rem rgba(0, 0, 0, 0.75);
 }
 
 .portfolio .portfolio-content .wrapper a .overlay {
@@ -1071,11 +1073,11 @@ footer {
     align-items: center;
   }
 
-  img{
+  /*img{
     -webkit-box-shadow: 1rem 1rem 3.4rem -1.3rem rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 1rem 1rem 3.4rem -1.3rem rgba(0, 0, 0, 0.75);
     box-shadow: 1rem 1rem 3.4rem -1.3rem rgba(0, 0, 0, 0.75);
-  }
+  }*/
 
   .cards {
     display: flex;

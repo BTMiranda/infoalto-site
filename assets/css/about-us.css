@@ -431,6 +431,10 @@ menu a {
   right: 0;
 }
 
+.button-prev {
+  left: 0;
+}
+
 .departamentos {
   display: flex;
   height: 100%;
@@ -464,6 +468,7 @@ menu a {
   background-size: cover;
   background-position: center;
   border-radius: 10px;
+  box-shadow: 1.2rem 1.2rem 3.4rem -1.3rem rgba(0, 0, 0, 0.75);
 }
 
 .foto-presidencia {
