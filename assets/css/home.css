@@ -895,7 +895,7 @@ footer {
 .footer-contact p {
   font-size: 1.3rem;
   color: #ffffff;
-  width: 25rem;
+  width: 20rem;
 }
 
 .footer-contact h4 {
@@ -1033,7 +1033,7 @@ footer {
     transform: translate(0, 0);
     margin-top: 15rem;
     margin-left: 10rem;
-    width: 50%;
+    margin-right: 10rem;
   }
 
   .about-us .content {
