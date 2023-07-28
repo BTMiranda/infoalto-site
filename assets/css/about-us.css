@@ -499,6 +499,26 @@ menu a {
   background-position-x: center;
 }
 
+.foto-flora-e-jessica {
+  background-image: url("/assets/images/foto-departamentos/flora-e-jessica.jpg");
+  background-position: top;
+}
+
+.foto-time {
+  background-image: url("/assets/images/foto-departamentos/time.CR2");
+  background-size: cover;
+}
+
+.foto-rg {
+  background-image: url("/assets/images/foto-departamentos/foto-rg.jpg");
+  background-size: cover;
+}
+
+.foto-emej-2023 {
+  background-image: url("/assets/images/foto-departamentos/foto-emej-2023.jpg");
+  background-position: top;
+}
+
 footer {
   background-color: #282828;
   min-height: 50vh;
