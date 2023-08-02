@@ -152,6 +152,7 @@ menu a {
   color: var(--text-color);
   margin-top: 4rem;
   font-size: 1.5rem;
+  text-transform: uppercase;
 }
 
 #particles-js {
